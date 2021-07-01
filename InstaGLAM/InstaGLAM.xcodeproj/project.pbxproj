@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D83676592F90B38741E26DD /* Pods_InstaGLAMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D991B9A057B457DFFEFDDF /* Pods_InstaGLAMTests.framework */; };
+		A2A305912BFFA207791EA9C4 /* Pods_InstaGLAM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ED9E5A5707EA79EA9B540C7 /* Pods_InstaGLAM.framework */; };
 		B41688DA268E6CFC0069D938 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41688D9268E6CFC0069D938 /* AppDelegate.swift */; };
 		B41688DC268E6CFC0069D938 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41688DB268E6CFC0069D938 /* SceneDelegate.swift */; };
 		B41688DE268E6CFC0069D938 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41688DD268E6CFC0069D938 /* HomeViewController.swift */; };
@@ -37,6 +39,16 @@
 		B4168939268E76FF0069D938 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4168938268E76FF0069D938 /* UIView+Extension.swift */; };
 		B416893B268E772E0069D938 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B416893A268E772E0069D938 /* UIViewController+Extension.swift */; };
 		B416893D268E775A0069D938 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B416893C268E775A0069D938 /* String+Extension.swift */; };
+		B416893F268E89300069D938 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B416893E268E89300069D938 /* GoogleService-Info.plist */; };
+		B447FE63268E86BD00665A41 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B447FE62268E86BD00665A41 /* FirebaseDatabase */; };
+		B447FE65268E86BD00665A41 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = B447FE64268E86BD00665A41 /* FirebaseAppCheck */; };
+		B447FE67268E86BD00665A41 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B447FE66268E86BD00665A41 /* FirebaseAppDistribution-Beta */; };
+		B447FE69268E86BD00665A41 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B447FE68268E86BD00665A41 /* FirebaseAnalytics */; };
+		B447FE6B268E86BD00665A41 /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B447FE6A268E86BD00665A41 /* FirebaseDatabaseSwift-Beta */; };
+		B447FE6D268E86BD00665A41 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = B447FE6C268E86BD00665A41 /* FirebaseCrashlytics */; };
+		B447FE6F268E86BD00665A41 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = B447FE6E268E86BD00665A41 /* FirebaseRemoteConfig */; };
+		B447FE71268E86BD00665A41 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B447FE70268E86BD00665A41 /* FirebaseAuth */; };
+		D4CFCAFCF026684372DEDBEC /* Pods_InstaGLAM_InstaGLAMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67A30F020EE042C43E00C84 /* Pods_InstaGLAM_InstaGLAMUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +69,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1363DE9DFBC446B43A6254D2 /* Pods-InstaGLAM-InstaGLAMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaGLAM-InstaGLAMUITests.release.xcconfig"; path = "Target Support Files/Pods-InstaGLAM-InstaGLAMUITests/Pods-InstaGLAM-InstaGLAMUITests.release.xcconfig"; sourceTree = "<group>"; };
+		183916055D94657EDBE91352 /* Pods-InstaGLAM-InstaGLAMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaGLAM-InstaGLAMUITests.debug.xcconfig"; path = "Target Support Files/Pods-InstaGLAM-InstaGLAMUITests/Pods-InstaGLAM-InstaGLAMUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		21F1033A7019FCDC24D48F64 /* Pods-InstaGLAM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaGLAM.debug.xcconfig"; path = "Target Support Files/Pods-InstaGLAM/Pods-InstaGLAM.debug.xcconfig"; sourceTree = "<group>"; };
+		5AC1BEBBBE28A8F4B436CE81 /* Pods-InstaGLAMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaGLAMTests.debug.xcconfig"; path = "Target Support Files/Pods-InstaGLAMTests/Pods-InstaGLAMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5ED9E5A5707EA79EA9B540C7 /* Pods_InstaGLAM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaGLAM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C483CA3EF3B4E84BB53AF0 /* Pods-InstaGLAMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaGLAMTests.release.xcconfig"; path = "Target Support Files/Pods-InstaGLAMTests/Pods-InstaGLAMTests.release.xcconfig"; sourceTree = "<group>"; };
+		87D991B9A057B457DFFEFDDF /* Pods_InstaGLAMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaGLAMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41688D6268E6CFC0069D938 /* InstaGLAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaGLAM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41688D9268E6CFC0069D938 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B41688DB268E6CFC0069D938 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +110,9 @@
 		B4168938268E76FF0069D938 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		B416893A268E772E0069D938 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		B416893C268E775A0069D938 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		B416893E268E89300069D938 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B67A30F020EE042C43E00C84 /* Pods_InstaGLAM_InstaGLAMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaGLAM_InstaGLAMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDE887724077B0FF61CDE711 /* Pods-InstaGLAM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaGLAM.release.xcconfig"; path = "Target Support Files/Pods-InstaGLAM/Pods-InstaGLAM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +120,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B447FE6B268E86BD00665A41 /* FirebaseDatabaseSwift-Beta in Frameworks */,
+				B447FE65268E86BD00665A41 /* FirebaseAppCheck in Frameworks */,
+				B447FE63268E86BD00665A41 /* FirebaseDatabase in Frameworks */,
+				B447FE6F268E86BD00665A41 /* FirebaseRemoteConfig in Frameworks */,
+				B447FE6D268E86BD00665A41 /* FirebaseCrashlytics in Frameworks */,
+				B447FE69268E86BD00665A41 /* FirebaseAnalytics in Frameworks */,
+				B447FE67268E86BD00665A41 /* FirebaseAppDistribution-Beta in Frameworks */,
+				B447FE71268E86BD00665A41 /* FirebaseAuth in Frameworks */,
+				A2A305912BFFA207791EA9C4 /* Pods_InstaGLAM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D83676592F90B38741E26DD /* Pods_InstaGLAMTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,12 +144,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4CFCAFCF026684372DEDBEC /* Pods_InstaGLAM_InstaGLAMUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B671F2EE85C6A85310DEE5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5ED9E5A5707EA79EA9B540C7 /* Pods_InstaGLAM.framework */,
+				B67A30F020EE042C43E00C84 /* Pods_InstaGLAM_InstaGLAMUITests.framework */,
+				87D991B9A057B457DFFEFDDF /* Pods_InstaGLAMTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B41688CD268E6CFB0069D938 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +168,8 @@
 				B41688EF268E6CFF0069D938 /* InstaGLAMTests */,
 				B41688F9268E6CFF0069D938 /* InstaGLAMUITests */,
 				B41688D7268E6CFC0069D938 /* Products */,
+				C4E2FE47F09C002FB1E35AC1 /* Pods */,
+				4B671F2EE85C6A85310DEE5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				B41688E7268E6CFE0069D938 /* Info.plist */,
+				B416893E268E89300069D938 /* GoogleService-Info.plist */,
 				B41688E2268E6CFE0069D938 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -270,6 +316,19 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		C4E2FE47F09C002FB1E35AC1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21F1033A7019FCDC24D48F64 /* Pods-InstaGLAM.debug.xcconfig */,
+				DDE887724077B0FF61CDE711 /* Pods-InstaGLAM.release.xcconfig */,
+				183916055D94657EDBE91352 /* Pods-InstaGLAM-InstaGLAMUITests.debug.xcconfig */,
+				1363DE9DFBC446B43A6254D2 /* Pods-InstaGLAM-InstaGLAMUITests.release.xcconfig */,
+				5AC1BEBBBE28A8F4B436CE81 /* Pods-InstaGLAMTests.debug.xcconfig */,
+				79C483CA3EF3B4E84BB53AF0 /* Pods-InstaGLAMTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -277,15 +336,27 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B41688FE268E6CFF0069D938 /* Build configuration list for PBXNativeTarget "InstaGLAM" */;
 			buildPhases = (
+				E6B6002B9183AF7DF3822EF3 /* [CP] Check Pods Manifest.lock */,
 				B41688D2268E6CFC0069D938 /* Sources */,
 				B41688D3268E6CFC0069D938 /* Frameworks */,
 				B41688D4268E6CFC0069D938 /* Resources */,
+				5DE9D5D3075F99F77FD120AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = InstaGLAM;
+			packageProductDependencies = (
+				B447FE62268E86BD00665A41 /* FirebaseDatabase */,
+				B447FE64268E86BD00665A41 /* FirebaseAppCheck */,
+				B447FE66268E86BD00665A41 /* FirebaseAppDistribution-Beta */,
+				B447FE68268E86BD00665A41 /* FirebaseAnalytics */,
+				B447FE6A268E86BD00665A41 /* FirebaseDatabaseSwift-Beta */,
+				B447FE6C268E86BD00665A41 /* FirebaseCrashlytics */,
+				B447FE6E268E86BD00665A41 /* FirebaseRemoteConfig */,
+				B447FE70268E86BD00665A41 /* FirebaseAuth */,
+			);
 			productName = InstaGLAM;
 			productReference = B41688D6268E6CFC0069D938 /* InstaGLAM.app */;
 			productType = "com.apple.product-type.application";
@@ -294,6 +365,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4168901268E6CFF0069D938 /* Build configuration list for PBXNativeTarget "InstaGLAMTests" */;
 			buildPhases = (
+				20AB52E5FB768348EB91026D /* [CP] Check Pods Manifest.lock */,
 				B41688E8268E6CFF0069D938 /* Sources */,
 				B41688E9268E6CFF0069D938 /* Frameworks */,
 				B41688EA268E6CFF0069D938 /* Resources */,
@@ -312,9 +384,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4168904268E6CFF0069D938 /* Build configuration list for PBXNativeTarget "InstaGLAMUITests" */;
 			buildPhases = (
+				A36FA00B1BDF52DCB5934EFE /* [CP] Check Pods Manifest.lock */,
 				B41688F2268E6CFF0069D938 /* Sources */,
 				B41688F3268E6CFF0069D938 /* Frameworks */,
 				B41688F4268E6CFF0069D938 /* Resources */,
+				DD1099F539B140C8AA935979 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -350,7 +424,7 @@
 				};
 			};
 			buildConfigurationList = B41688D1268E6CFB0069D938 /* Build configuration list for PBXProject "InstaGLAM" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -358,6 +432,9 @@
 				Base,
 			);
 			mainGroup = B41688CD268E6CFB0069D938;
+			packageReferences = (
+				B447FE61268E86BD00665A41 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B41688D7268E6CFC0069D938 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -376,6 +453,7 @@
 			files = (
 				B4168932268E75010069D938 /* Posts.storyboard in Resources */,
 				B41688E6268E6CFE0069D938 /* LaunchScreen.storyboard in Resources */,
+				B416893F268E89300069D938 /* GoogleService-Info.plist in Resources */,
 				B4168936268E75130069D938 /* Profile.storyboard in Resources */,
 				B41688E3268E6CFE0069D938 /* Assets.xcassets in Resources */,
 				B4168930268E74E90069D938 /* Explore.storyboard in Resources */,
@@ -400,6 +478,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20AB52E5FB768348EB91026D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaGLAMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DE9D5D3075F99F77FD120AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaGLAM/Pods-InstaGLAM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaGLAM/Pods-InstaGLAM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaGLAM/Pods-InstaGLAM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A36FA00B1BDF52DCB5934EFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaGLAM-InstaGLAMUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD1099F539B140C8AA935979 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaGLAM-InstaGLAMUITests/Pods-InstaGLAM-InstaGLAMUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaGLAM-InstaGLAMUITests/Pods-InstaGLAM-InstaGLAMUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaGLAM-InstaGLAMUITests/Pods-InstaGLAM-InstaGLAMUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6B6002B9183AF7DF3822EF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaGLAM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B41688D2268E6CFC0069D938 /* Sources */ = {
@@ -598,6 +779,7 @@
 		};
 		B41688FF268E6CFF0069D938 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21F1033A7019FCDC24D48F64 /* Pods-InstaGLAM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -626,6 +808,7 @@
 		};
 		B4168900268E6CFF0069D938 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDE887724077B0FF61CDE711 /* Pods-InstaGLAM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -654,6 +837,7 @@
 		};
 		B4168902268E6CFF0069D938 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AC1BEBBBE28A8F4B436CE81 /* Pods-InstaGLAMTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -679,6 +863,7 @@
 		};
 		B4168903268E6CFF0069D938 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79C483CA3EF3B4E84BB53AF0 /* Pods-InstaGLAMTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -704,6 +889,7 @@
 		};
 		B4168905268E6CFF0069D938 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 183916055D94657EDBE91352 /* Pods-InstaGLAM-InstaGLAMUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -727,6 +913,7 @@
 		};
 		B4168906268E6CFF0069D938 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1363DE9DFBC446B43A6254D2 /* Pods-InstaGLAM-InstaGLAMUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -788,6 +975,60 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B447FE61268E86BD00665A41 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B447FE62268E86BD00665A41 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B447FE61268E86BD00665A41 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		B447FE64268E86BD00665A41 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B447FE61268E86BD00665A41 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		B447FE66268E86BD00665A41 /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B447FE61268E86BD00665A41 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		B447FE68268E86BD00665A41 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B447FE61268E86BD00665A41 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		B447FE6A268E86BD00665A41 /* FirebaseDatabaseSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B447FE61268E86BD00665A41 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseDatabaseSwift-Beta";
+		};
+		B447FE6C268E86BD00665A41 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B447FE61268E86BD00665A41 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		B447FE6E268E86BD00665A41 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B447FE61268E86BD00665A41 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		B447FE70268E86BD00665A41 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B447FE61268E86BD00665A41 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B41688CE268E6CFB0069D938 /* Project object */;
 }

@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'InstaGLAM' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for InstaGLAM
+pod 'Appirater'
+pod 'SVProgressHUD'
+
+  target 'InstaGLAMTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'InstaGLAMUITests' do
+    # Pods for testing
+  end
+
+end
