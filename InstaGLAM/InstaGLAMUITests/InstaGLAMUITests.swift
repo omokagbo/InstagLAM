@@ -2,7 +2,7 @@
 //  InstaGLAMUITests.swift
 //  InstaGLAMUITests
 //
-//  Created by Decagon on 01/07/2021.
+//  Created by omokagbo on 01/07/2021.
 //
 
 import XCTest
