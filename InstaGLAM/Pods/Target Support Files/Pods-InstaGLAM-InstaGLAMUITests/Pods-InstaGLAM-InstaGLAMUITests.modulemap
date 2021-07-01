@@ -1,0 +1,6 @@
+framework module Pods_InstaGLAM_InstaGLAMUITests {
+  umbrella header "Pods-InstaGLAM-InstaGLAMUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
