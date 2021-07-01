@@ -97,13 +97,10 @@
 		B41688D8268E6CFC0069D938 /* InstaGLAM */ = {
 			isa = PBXGroup;
 			children = (
-				B41688D9268E6CFC0069D938 /* AppDelegate.swift */,
-				B41688DB268E6CFC0069D938 /* SceneDelegate.swift */,
-				B41688DD268E6CFC0069D938 /* ViewController.swift */,
-				B41688DF268E6CFC0069D938 /* Main.storyboard */,
-				B41688E2268E6CFE0069D938 /* Assets.xcassets */,
-				B41688E4268E6CFE0069D938 /* LaunchScreen.storyboard */,
-				B41688E7268E6CFE0069D938 /* Info.plist */,
+				B4168907268E6E4E0069D938 /* App+Scene Delegate */,
+				B4168909268E6E680069D938 /* Controllers */,
+				B4168908268E6E610069D938 /* Views */,
+				B416890A268E6E6F0069D938 /* Resources */,
 			);
 			path = InstaGLAM;
 			sourceTree = "<group>";
@@ -122,6 +119,41 @@
 				B41688FA268E6CFF0069D938 /* InstaGLAMUITests.swift */,
 			);
 			path = InstaGLAMUITests;
+			sourceTree = "<group>";
+		};
+		B4168907268E6E4E0069D938 /* App+Scene Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				B41688D9268E6CFC0069D938 /* AppDelegate.swift */,
+				B41688DB268E6CFC0069D938 /* SceneDelegate.swift */,
+			);
+			path = "App+Scene Delegate";
+			sourceTree = "<group>";
+		};
+		B4168908268E6E610069D938 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B41688DF268E6CFC0069D938 /* Main.storyboard */,
+				B41688E4268E6CFE0069D938 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B4168909268E6E680069D938 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B41688DD268E6CFC0069D938 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B416890A268E6E6F0069D938 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B41688E7268E6CFE0069D938 /* Info.plist */,
+				B41688E2268E6CFE0069D938 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,7 +469,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FR92VWWUNN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = InstaGLAM/Info.plist;
+				INFOPLIST_FILE = InstaGLAM/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -465,7 +497,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FR92VWWUNN;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = InstaGLAM/Info.plist;
+				INFOPLIST_FILE = InstaGLAM/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
