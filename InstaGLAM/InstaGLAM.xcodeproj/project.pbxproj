@@ -61,6 +61,7 @@
 		B416896D268EA2BE0069D938 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B416896C268EA2BE0069D938 /* FirebaseStorage */; };
 		B4168970268EAB270069D938 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B416896F268EAB270069D938 /* IQKeyboardManagerSwift */; };
 		B4168973268EACA60069D938 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B4168972268EACA60069D938 /* Kingfisher */; };
+		B4168975268EB6750069D938 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4168974268EB6750069D938 /* Constants.swift */; };
 		D4CFCAFCF026684372DEDBEC /* Pods_InstaGLAM_InstaGLAMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67A30F020EE042C43E00C84 /* Pods_InstaGLAM_InstaGLAMUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -129,6 +130,7 @@
 		B416894A268E9B9E0069D938 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		B416894D268EA0C90069D938 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		B416894F268EA1630069D938 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		B4168974268EB6750069D938 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B67A30F020EE042C43E00C84 /* Pods_InstaGLAM_InstaGLAMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaGLAM_InstaGLAMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE887724077B0FF61CDE711 /* Pods-InstaGLAM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaGLAM.release.xcconfig"; path = "Target Support Files/Pods-InstaGLAM/Pods-InstaGLAM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -326,6 +328,7 @@
 				B4168938268E76FF0069D938 /* UIView+Extension.swift */,
 				B416893A268E772E0069D938 /* UIViewController+Extension.swift */,
 				B416893C268E775A0069D938 /* String+Extension.swift */,
+				B4168974268EB6750069D938 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -675,6 +678,7 @@
 				B416891E268E71610069D938 /* PostDetailsViewController.swift in Sources */,
 				B416892C268E72B70069D938 /* PublishPostsViewController.swift in Sources */,
 				B4168924268E720A0069D938 /* FollowListViewController.swift in Sources */,
+				B4168975268EB6750069D938 /* Constants.swift in Sources */,
 				B4168922268E71CA0069D938 /* SettingsViewController.swift in Sources */,
 				B4168945268E96310069D938 /* LoginResponse.swift in Sources */,
 			);
