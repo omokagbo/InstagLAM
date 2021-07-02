@@ -21,6 +21,8 @@ class LoginViewController: UIViewController {
         field.layer.masksToBounds = true
         field.layer.cornerRadius = Constants.textFieldsCornerRadius
         field.backgroundColor = .secondarySystemBackground
+        field.layer.borderWidth = 1.0
+        field.layer.borderColor = UIColor.secondaryLabel.cgColor
         return field
     }()
     
@@ -28,7 +30,7 @@ class LoginViewController: UIViewController {
         let field =  UITextField()
         field.isSecureTextEntry = true
         field.placeholder = "Password"
-        field.returnKeyType = .next
+        field.returnKeyType = .continue
         field.leftViewMode = .always
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
         field.autocapitalizationType = .none
@@ -36,6 +38,8 @@ class LoginViewController: UIViewController {
         field.layer.masksToBounds = true
         field.layer.cornerRadius = Constants.textFieldsCornerRadius
         field.backgroundColor = .secondarySystemBackground
+        field.layer.borderWidth = 1.0
+        field.layer.borderColor = UIColor.secondaryLabel.cgColor
         return field
     }()
     
@@ -60,13 +64,17 @@ class LoginViewController: UIViewController {
     
     private let termsBtn: UIButton = {
         let button = UIButton()
-        
+        button.setTitle("Terms & Conditions", for: .normal)
+        button.setTitleColor(.secondaryLabel, for: .normal)
+        button.layer.masksToBounds = true
         return button
     }()
     
     private let privacyBtn: UIButton = {
         let button = UIButton()
-        
+        button.setTitle("Privacy Policy", for: .normal)
+        button.setTitleColor(.secondaryLabel, for: .normal)
+        button.layer.masksToBounds = true
         return button
     }()
     
@@ -90,6 +98,30 @@ class LoginViewController: UIViewController {
                                   y: 0.0,
                                   width: view.width,
                                   height: view.height/3.0)
+        userNameOrEmailTextField.frame = CGRect(x: 25.0,
+                                                y: headerView.bottom + 40.0,
+                                                width: view.width - 50.0,
+                                                height: Constants.textFieldsHeight)
+        passwordTextField.frame = CGRect(x: 25.0,
+                                         y: userNameOrEmailTextField.bottom + 20.0,
+                                         width: view.width - 50.0,
+                                         height: Constants.textFieldsHeight)
+        loginBtn.frame = CGRect(x: 25.0,
+                                y: passwordTextField.bottom + 20.0,
+                                width: view.width - 50.0,
+                                height: Constants.buttonHeight)
+        createAccountBtn.frame = CGRect(x: 25.0,
+                                        y: loginBtn.bottom + 10.0,
+                                        width: view.width - 50.0,
+                                        height: Constants.buttonHeight)
+        termsBtn.frame = CGRect(x: 25.0,
+                                y: view.bottom - 100.0,
+                                width: view.width - 50.0,
+                                height: Constants.buttonHeight)
+        privacyBtn.frame = CGRect(x: 25.0,
+                                  y: view.bottom - 70.0,
+                                  width: view.width - 50,
+                                  height: Constants.buttonHeight)
         configureHeaderView()
     }
     
