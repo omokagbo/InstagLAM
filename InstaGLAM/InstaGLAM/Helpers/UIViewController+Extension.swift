@@ -9,6 +9,10 @@ import UIKit
 
 extension UIViewController {
     
+    static var identifier: String {
+        return String(describing: self)
+    }
+    
     func showAlert (alertText: String, alertMessage: String) {
         let alert = UIAlertController(title: alertText, message: alertMessage, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Got it", style: .default, handler: nil))
@@ -31,5 +35,10 @@ extension UIViewController {
         controller.modalPresentationStyle = .fullScreen
         controller.modalTransitionStyle = .flipHorizontal
         present(controller, animated: true, completion: nil)
+    }
+    
+    static func instantiate(storyboardName: String) -> Self {
+        let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: identifier) as! Self
     }
 }

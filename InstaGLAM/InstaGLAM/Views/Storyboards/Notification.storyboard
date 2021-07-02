@@ -20,7 +20,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="jEF-vk-A2e">
-                        <imageReference key="image" image="bell" catalog="system"/>
+                        <imageReference key="image" image="heart.fill" catalog="system"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="H07-rV-VPK"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -49,7 +49,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bell" catalog="system" width="128" height="124"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

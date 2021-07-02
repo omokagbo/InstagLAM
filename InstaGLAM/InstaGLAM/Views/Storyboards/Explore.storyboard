@@ -20,7 +20,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="mPK-dm-S1w">
-                        <imageReference key="image" image="binoculars" catalog="system"/>
+                        <imageReference key="image" image="magnifyingglass" catalog="system"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="Pea-02-h1X"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -49,7 +49,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="binoculars" catalog="system" width="128" height="90"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
