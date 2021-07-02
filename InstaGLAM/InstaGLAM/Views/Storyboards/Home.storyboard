@@ -20,7 +20,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="mKl-OB-3TM">
-                        <imageReference key="image" image="house" catalog="system"/>
+                        <imageReference key="image" image="house.fill" catalog="system"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="33h-cG-nYt"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -49,7 +49,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

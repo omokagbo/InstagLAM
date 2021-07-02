@@ -20,7 +20,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="hey-RW-K0J">
-                        <imageReference key="image" image="person" catalog="system"/>
+                        <imageReference key="image" image="person.fill" catalog="system"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="nOe-KU-dkU"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -49,7 +49,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
