@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 class LoginViewController: UIViewController {
     
     private let userNameOrEmailTextField: UITextField = {
-        return UITextField()
+        let field = UITextField()
+        return field
     }()
     
     private let passwordTextField: UITextField = {
@@ -36,6 +38,7 @@ class LoginViewController: UIViewController {
     }()
     
     private let headerView: UIView = {
+        
         return UIView()
     }()
 
@@ -47,6 +50,10 @@ class LoginViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         // assign frames
+        headerView.frame = CGRect(x: 0,
+                                  y: view.safeAreaInsets.top,
+                                  width: view.width,
+                                  height: 200)
     }
     
     private func addSubViews() {

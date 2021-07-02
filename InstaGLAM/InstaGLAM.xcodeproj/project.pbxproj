@@ -59,6 +59,8 @@
 		B4168969268EA2BE0069D938 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = B4168968268EA2BE0069D938 /* FirebaseMessaging */; };
 		B416896B268EA2BE0069D938 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = B416896A268EA2BE0069D938 /* FirebaseRemoteConfig */; };
 		B416896D268EA2BE0069D938 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B416896C268EA2BE0069D938 /* FirebaseStorage */; };
+		B4168970268EAB270069D938 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B416896F268EAB270069D938 /* IQKeyboardManagerSwift */; };
+		B4168973268EACA60069D938 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B4168972268EACA60069D938 /* Kingfisher */; };
 		D4CFCAFCF026684372DEDBEC /* Pods_InstaGLAM_InstaGLAMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67A30F020EE042C43E00C84 /* Pods_InstaGLAM_InstaGLAMUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -145,10 +147,12 @@
 				B4168961268EA2BE0069D938 /* FirebaseFunctions in Frameworks */,
 				B4168959268EA2BE0069D938 /* FirebaseCrashlytics in Frameworks */,
 				B416896D268EA2BE0069D938 /* FirebaseStorage in Frameworks */,
+				B4168970268EAB270069D938 /* IQKeyboardManagerSwift in Frameworks */,
 				B4168955268EA2BE0069D938 /* FirebaseAppDistribution-Beta in Frameworks */,
 				B4168969268EA2BE0069D938 /* FirebaseMessaging in Frameworks */,
 				B416895F268EA2BE0069D938 /* FirebaseFirestore in Frameworks */,
 				B416895D268EA2BE0069D938 /* FirebaseDynamicLinks in Frameworks */,
+				B4168973268EACA60069D938 /* Kingfisher in Frameworks */,
 				B4168957268EA2BE0069D938 /* FirebaseAuth in Frameworks */,
 				B4168963268EA2BE0069D938 /* FirebaseInAppMessaging-Beta in Frameworks */,
 			);
@@ -413,6 +417,8 @@
 				B4168968268EA2BE0069D938 /* FirebaseMessaging */,
 				B416896A268EA2BE0069D938 /* FirebaseRemoteConfig */,
 				B416896C268EA2BE0069D938 /* FirebaseStorage */,
+				B416896F268EAB270069D938 /* IQKeyboardManagerSwift */,
+				B4168972268EACA60069D938 /* Kingfisher */,
 			);
 			productName = InstaGLAM;
 			productReference = B41688D6268E6CFC0069D938 /* InstaGLAM.app */;
@@ -491,6 +497,8 @@
 			mainGroup = B41688CD268E6CFB0069D938;
 			packageReferences = (
 				B4168951268EA2BE0069D938 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				B416896E268EAB270069D938 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				B4168971268EACA60069D938 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = B41688D7268E6CFC0069D938 /* Products */;
 			projectDirPath = "";
@@ -1047,6 +1055,22 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		B416896E268EAB270069D938 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		B4168971268EACA60069D938 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1119,6 +1143,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B4168951268EA2BE0069D938 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		B416896F268EAB270069D938 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B416896E268EAB270069D938 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+		B4168972268EACA60069D938 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4168971268EACA60069D938 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
