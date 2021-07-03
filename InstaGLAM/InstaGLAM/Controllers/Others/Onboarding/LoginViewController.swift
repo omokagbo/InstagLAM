@@ -55,7 +55,7 @@ class LoginViewController: UIViewController {
     
     private let createAccountBtn: UIButton = {
         let button = UIButton()
-        button.setTitle("New User? Create Account", for: .normal)
+        button.setTitle("New User? Create an Account", for: .normal)
         button.layer.masksToBounds = true
         button.cornerRadius = Constants.buttonCornerRadius
         button.setTitleColor(.label, for: .normal)
@@ -64,7 +64,7 @@ class LoginViewController: UIViewController {
     
     private let termsBtn: UIButton = {
         let button = UIButton()
-        button.setTitle("Terms & Conditions", for: .normal)
+        button.setTitle("Terms of Service", for: .normal)
         button.setTitleColor(.secondaryLabel, for: .normal)
         button.layer.masksToBounds = true
         return button
@@ -88,6 +88,12 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginBtn.addTarget(self, action: #selector(didTapLoginBtn), for: .touchUpInside)
+        createAccountBtn.addTarget(self, action: #selector(didTapCreateAccount), for: .touchUpInside)
+        termsBtn.addTarget(self, action: #selector(didTapTermsBtn), for: .touchUpInside)
+        privacyBtn.addTarget(self, action: #selector(didTapPrivacyBtn), for: .touchUpInside)
+        userNameOrEmailTextField.delegate = self
+        passwordTextField.delegate = self
         view.backgroundColor = .systemBackground
         addSubViews()
     }
@@ -170,4 +176,15 @@ class LoginViewController: UIViewController {
         
     }
     
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == userNameOrEmailTextField {
+            passwordTextField.becomeFirstResponder()
+        } else if textField == passwordTextField {
+            didTapLoginBtn()
+        }
+        return true
+    }
 }
