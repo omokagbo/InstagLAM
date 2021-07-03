@@ -7,6 +7,7 @@
 
 import UIKit
 import IQKeyboardManagerSwift
+import SafariServices
 
 class LoginViewController: UIViewController {
     
@@ -161,19 +162,36 @@ class LoginViewController: UIViewController {
     }
     
     @objc private func didTapLoginBtn() {
-        
+        passwordTextField.resignFirstResponder()
+        userNameOrEmailTextField.resignFirstResponder()
+        if let username = userNameOrEmailTextField.text,
+           !username.isEmpty,
+           username != "",
+           let password = passwordTextField.text,
+           !password.isEmpty,
+           password != "" {
+            // implement login functionality
+        } else {
+            self.showAlert(alertText: "Empty Fields", alertMessage: "Please Fill Out All Fields to Login")
+        }
     }
     
     @objc private func didTapCreateAccount() {
+        let controller = SignUpViewController()
         
+        present(controller, animated: true)
     }
     
     @objc private func didTapPrivacyBtn() {
-        
+        guard let url = URL(string: "https://help.instagram.com/519522125107875?helpref=page_content") else { return }
+        let viewController = SFSafariViewController(url: url)
+        present(viewController, animated: true)
     }
     
     @objc private func didTapTermsBtn() {
-        
+        guard let url = URL(string: "https://www.instagram.com/about/legal/terms/before-january-19-2013/#:~:text=Basic%20Terms&text=You%20may%20not%20post%20nude,or%20intimidate%20other%20Instagram%20users.") else { return }
+        let viewController = SFSafariViewController(url: url)
+        present(viewController, animated: true)
     }
     
 }
