@@ -7,110 +7,83 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0582C0127938D46A8FE977F66F158788 /* hy.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2DC9F0B26B5081897CCF6F866787BF31 /* hy.lproj */; };
-		05F2023151E1CC7AC2F513EE233A9026 /* Pods-InstaGLAM-InstaGLAMUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 15880483925404E3D2F455B0901E8B80 /* Pods-InstaGLAM-InstaGLAMUITests-dummy.m */; };
-		0CA80ED7E59E6BCE64CEEE649A3C6D2F /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 61E5A2C1053C5483B047D5F6CEBF1BF4 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0D343E7390CAB8A0606EB4F364FB92ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43B1BC4D981CE08E5F4E3A9F1B75602 /* Foundation.framework */; };
-		0EB541DBBE89D7275D6A41A6817DF3DB /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = E15929E14D7FA7A53351991E712BD9FA /* Appirater.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		125E407E10664F2488A895BA954AEFB2 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F86F897F9324C26ADEE3FE42CDA5A648 /* ja.lproj */; };
-		1A8280B71F4682CFC703C506A9F53A26 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA80D9D7E9C54EFED4AD1657AD22328E /* CFNetwork.framework */; };
-		1D8166D9B7451828ACC46BA5EC91C156 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 45C2601F7400484A3C68A00B13D38BE3 /* en.lproj */; };
+		0222B4BBA45FB1F19B33B5B8D4E5CFAE /* sk.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E5516C419550D60DD228FE3A8678FED5 /* sk.lproj */; };
+		0EB541DBBE89D7275D6A41A6817DF3DB /* Appirater.m in Sources */ = {isa = PBXBuildFile; fileRef = EE382DAEFB9771608F9ADB6F4937D663 /* Appirater.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1A8280B71F4682CFC703C506A9F53A26 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24E2A3A8AC4BBC9CF3A22A29CB7D84E2 /* CFNetwork.framework */; };
+		1D806311FB564D7F63ED4334BD08D5D5 /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = AD8D0B010B34C0FCE42DA81E82ACA802 /* ko.lproj */; };
 		21F78CDDA0AEA207152E8CC8E4C00BEC /* Pods-InstaGLAMTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC0EA45C2811037F9D1BAD1A8F3D8743 /* Pods-InstaGLAMTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		24AC76324FE7BAC2FE0395703E7BCC54 /* Pods-InstaGLAMTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED019F5DC14813D637BDFDDDD46A4F47 /* Pods-InstaGLAMTests-dummy.m */; };
-		264E1A478BDFA31DA6842749C72EA535 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 32BCB1AB4B2424B7524392A2D043AEB7 /* SVProgressHUD.bundle */; };
-		2AD359E704AF83E20E0A74C23361334E /* el.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 46DCEB6F45E83EC4695A02B81C89BF06 /* el.lproj */; };
-		309F22E02708C1672586CEDDA582FBF7 /* he.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B98E9F1F0373FFA326E7D0545773E896 /* he.lproj */; };
-		32037907392D2742D28D8D16D17D6E57 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 04F0C0783C14BF2A7C1899C842DB9602 /* de.lproj */; };
-		3392F8407B8C6F47A4E47436894642D8 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DBB8F17A34BF10E076BE6F1DFBE508 /* SVProgressHUD.m */; };
-		3509C91483C57A42A54740C741D72F70 /* uk.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8936F5EB15A6B715C5DEE3DE2AF1E72D /* uk.lproj */; };
-		35DACDD6B05F93043FDE53A662D2F1BA /* ro.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1421DEB1707622EB147DF861F2B8365C /* ro.lproj */; };
-		3BE0FE95285AB5EBDA67F13E5BD3B848 /* Pods-InstaGLAM-InstaGLAMUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F170AC1F6B60B87E8525741C4FE323DE /* Pods-InstaGLAM-InstaGLAMUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3EB40DF3684C05D3C8D96590109C096E /* sk.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0557800F141C82992ACB997098FBDF73 /* sk.lproj */; };
-		44886AED5FB4D689528235756F9E7C56 /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B1B19226A2194D8941535106F26E5D1F /* es.lproj */; };
-		457BBFFA7D71660D846A9245C7BE88E9 /* fa.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7E33579FAB474DB3B435BEF0CEA3E2E3 /* fa.lproj */; };
-		500DB5D279CC7AC1057FD6F0EBE4540F /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 28242ABC456EB09775C07C440181493F /* pl.lproj */; };
-		515132AB4A7F18D54C4EF5566366B581 /* Appirater-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1134017E52976A4F6A7045C50B44C1B /* Appirater-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5407A88D226644F1660E60FE134283B5 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 932A437D4481FCB3C0D89FA031E87AFC /* zh-Hans.lproj */; };
-		54CDC66DEE67E9E4CF45D409C1FED295 /* nb.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2BF4C60349B4A03C098E4B126451492D /* nb.lproj */; };
-		561BA434576D15C0D15085B84F3209F9 /* Appirater-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C8D9695975BDC305EE36DBC240CA97 /* Appirater-dummy.m */; };
-		5A609B2365137FD1BA6C422D36B35AB8 /* ar.lproj in Resources */ = {isa = PBXBuildFile; fileRef = DD7DFCF3F4F0FEA8DF73E89B4E580FFF /* ar.lproj */; };
-		660A459CC88CDFC92EDE52237F6253C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43B1BC4D981CE08E5F4E3A9F1B75602 /* Foundation.framework */; };
-		66E8CD598ED61FAA20F8FF3D9892781D /* Pods-InstaGLAM-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A04F79B03F410D56BB491AA941A492E /* Pods-InstaGLAM-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66EDDF1ED0A6BE8BB3020FD6D9A9024C /* pt-BR.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2CABD7E78F1AC17A6D73AB3D9174405E /* pt-BR.lproj */; };
-		6D016B2A5759D279DBAC82AA1E88CCDE /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1672109F021B0A7BE1BFE39FFE93945D /* ko.lproj */; };
-		73F6DF7F3EAD8F097022A97D22598E9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43B1BC4D981CE08E5F4E3A9F1B75602 /* Foundation.framework */; };
-		73FDE37AE686C54E28B360ACA75EC0DE /* cs.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 896A7CAF132A6A6B4535817BC43DB6F4 /* cs.lproj */; };
-		7BA515CD761F547F941331564F5433DA /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8E4548E9789DD13B84BA979E828CB26C /* tr.lproj */; };
-		7E841D0B743607A7198B168F7FC6B07A /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F38491F149EAAE74E06C66A664023934 /* nl.lproj */; };
-		7F52BD0341E46A6053B15014557ACB6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43B1BC4D981CE08E5F4E3A9F1B75602 /* Foundation.framework */; };
-		8E031566993ED7E2535232C327108F9E /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9F512CA74D5EBC5B50FB24DF57C10AA2 /* zh-Hant.lproj */; };
+		2C4CCFB6ABB0F9D7B13D6E1F56B66558 /* fi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4635E20AEC5108FDE3D6C9BCEDB02D19 /* fi.lproj */; };
+		2FB1E71D23879B8AEA3D97A868E9B657 /* Pods-InstaGLAM-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC59F470C016C90C4494D236BE3EDD43 /* Pods-InstaGLAM-dummy.m */; };
+		34716A125EF0A0EE428F427B9480955E /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D30B7452A00CBE3C12CF54228E3D5814 /* pl.lproj */; };
+		3CC21D4BE7F278804FF319972A3CB160 /* ro.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 87BE3AF5E703D67BAD9B2259E68A24ED /* ro.lproj */; };
+		3CC8BB14BF0F8743104217C09CCAA826 /* el.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 692112D7E8BC841939C48B442C168D0D /* el.lproj */; };
+		45D5B25FCBC58781A1058C9A5525EA89 /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B238246CE9F14C07EA37E29ABFE38CFB /* pt.lproj */; };
+		515132AB4A7F18D54C4EF5566366B581 /* Appirater-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 145D0F7A5529BDA9BF01D16309739EE1 /* Appirater-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53A680AAEC4382564410C4818849BCF3 /* fa.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 82B16F71DF1205CC86659BCCB2E498CB /* fa.lproj */; };
+		561BA434576D15C0D15085B84F3209F9 /* Appirater-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA4AEE4D95B204121D54CA098BE839F1 /* Appirater-dummy.m */; };
+		5A985A636096D348FAEA7F8A552E7889 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B2E3388BABC43E1520F9E83552ABAD9F /* en.lproj */; };
+		5B57BEF81FA1A91145E431DC99C1D369 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E828CF164BCFD02A6A1F18E70222953 /* Foundation.framework */; };
+		5EFBA87AEF80AC01BEE452AA2363E684 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A5BADFE6DC3909088569B56109F0AF18 /* de.lproj */; };
+		5F8BEE9F4A4E98EBDBD63B12C5EFFB84 /* cs.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5ABC53B8E8DB48857702E03390003EA0 /* cs.lproj */; };
+		6B13F0E6D56CDC76D8651FBD0F71DA7B /* nb.lproj in Resources */ = {isa = PBXBuildFile; fileRef = CF66B0E4806561F2240387432AF747FB /* nb.lproj */; };
+		6D756E6E3A9C63B43A4CC48EF22AEBC1 /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C4CB8932280FCEA53C832D0D728EB3F6 /* nl.lproj */; };
+		73F6DF7F3EAD8F097022A97D22598E9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E828CF164BCFD02A6A1F18E70222953 /* Foundation.framework */; };
+		75184AABB4F80A1DE7359D82E05E27A8 /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 44D5632E65D206FE9D5EB02C0C8B415E /* tr.lproj */; };
+		7B37CCFB08E1B94320BD49F27583AC0D /* hu.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F2BA5D47CC59EA898BC5D4AC38A05601 /* hu.lproj */; };
+		7C489A83410EACBF15CF94E45CDECF11 /* uk.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4A3F4D7A8E4A87535AE26491B95756BB /* uk.lproj */; };
+		7D7B64D7E875DA96ADF5DFB4E84DC182 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E828CF164BCFD02A6A1F18E70222953 /* Foundation.framework */; };
+		85FCE67C910B1E790E4387C63AE0C69B /* pt-BR.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 341983AA4B6FBAA2B8C1740A8EA7F375 /* pt-BR.lproj */; };
+		8A176B7204C7BAC6B69293063C0EE751 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E67B1C004ACE190BDE4A3A665B34703E /* it.lproj */; };
+		8C92E12947C809F352A1282EAB550C1B /* ca.lproj in Resources */ = {isa = PBXBuildFile; fileRef = DFC89960D73982E73A25D9AF889BB277 /* ca.lproj */; };
+		8ED178AA9BABAEFA59BE35B42AE3C122 /* ms.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9EF6BE0CC2E68EFAD2736A0B9CF88CDE /* ms.lproj */; };
+		900EC0F45CE6556E2CC2D0793540A662 /* hy.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D99FA108D76B5D4A2556336B8F18ED68 /* hy.lproj */; };
 		93F5AF360FF71EB123F9B47D1F0C457F /* Appirater.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1E9CD753F6BD26760EFAA1DF57482D50 /* Appirater.bundle */; };
-		96EADE99073DBA8FCE7904627E2D18EE /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 89017E95120BFAB988AA75F6A54A939E /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		99DB9F4085FCE0EA3E11E817CB2E6D98 /* da.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4B93A3C378CF1A9F47D4A1E556B13BD3 /* da.lproj */; };
-		9FDEEEE37349769B84A30B0105DFF456 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 415C36102992A95591684B2140172FA3 /* SVProgressHUD-dummy.m */; };
-		A000B655184229D54DFCA9DED9C4A9EC /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 027634D28EA7F2A01A09A35A048E877A /* pt.lproj */; };
-		A51A04AEE86F0B43D76C7C2C0926E6B9 /* AppiraterDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7AE2CB514E69E3E606EE200263464B97 /* AppiraterDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8736376687072F4E4D0760A062EE781 /* sv.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1D03291C7943870DD723007B782A4B80 /* sv.lproj */; };
-		AB19EB23232D2046208B3EC8A860F812 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2EE865F9583B517C0060671924CEE143 /* fr.lproj */; };
-		AC4F7C408F21F4FCA3CCFD4B4644CB62 /* ca.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4AE62737F65818328370326C51982AC0 /* ca.lproj */; };
-		B5B9915F785CB47C5C07F0B698911B00 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE20F06F7B6D76134F657539A0F08566 /* SVIndefiniteAnimatedView.m */; };
-		B61DB9FE17DA3F23412CE438363380C6 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0925DFCBA4C37EB01AE09E3F21C589A0 /* it.lproj */; };
-		C5554F1496972807753FC613FC54FB62 /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2CA1B218B857FC27FA2C6CA34A5F35B6 /* ru.lproj */; };
-		CAD7465FDE3B7D4929DDF28626FEBE49 /* ms.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 772BD6E73AD48E8871D8EA22F32C3EB8 /* ms.lproj */; };
-		D2246BE5AF9C116D84444CC5C955BC02 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0092DCF3E8A5937E4275B576AC8C4C26 /* SVRadialGradientLayer.m */; };
-		D3A53FA69A0F2D2FCC91965D2926CF19 /* id.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E21940F832625CE1BBB0B2BB354BE7F9 /* id.lproj */; };
-		D6EA82211D0469403F4E6AAFBFDE4665 /* th.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D4D80E03AA9198D257C3D08816BB354D /* th.lproj */; };
-		D755F4C7ABCF1EE4043909E4FAC70B31 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0C428020ECA88AE444DCB735368A40 /* SystemConfiguration.framework */; };
-		D87B2D5ED73534ACF97CE0A52FA18AE4 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = F73AA924E0CD15C311059BA0AD452DCC /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE12057AB8895931A0E9499619C5CFC8 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF7D46A7FC259A50E603FA0611EA0510 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E0186A63060F0EB3676F95CD0ACE0E18 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 47D31692FBAA64A3D8258DE7B18BB74D /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E28C2A4D11D0E714F957E6AEF7F92B9F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448DFB0B24EE6231C03649985B6EECC4 /* QuartzCore.framework */; };
-		EDF9BFB4135969EF449F26D502E4C12A /* vi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A3BF06500D0B35574F8C16DED74D065E /* vi.lproj */; };
-		EEAA1518C49804736C3F40117D064CBE /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD84BFEA28861333184644E7E1F12FD /* SVProgressAnimatedView.m */; };
-		F09542D9F19B7A530EEB57A7BE412623 /* hu.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E4A82195512D497640F7CC90B29878D8 /* hu.lproj */; };
-		F4D140B67679F8DC7EA246BE2E64F5AB /* Appirater.h in Headers */ = {isa = PBXBuildFile; fileRef = BC63CBFCA32C32C0D5ACBAB0AACF0233 /* Appirater.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F4D61257D65087FDF5CB524867AD8F73 /* fi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EFA99AA9E963B197A80C19B11A0E1C33 /* fi.lproj */; };
-		F62BDFE07EDA0D69B0B9C66C706C95F6 /* Pods-InstaGLAM-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC59F470C016C90C4494D236BE3EDD43 /* Pods-InstaGLAM-dummy.m */; };
-		F8ECBDBBEAF192A9E7B119943E2556CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C43B1BC4D981CE08E5F4E3A9F1B75602 /* Foundation.framework */; };
+		9789027A5B6AC1FE2399C530FC06E540 /* Pods-InstaGLAM-InstaGLAMUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 15880483925404E3D2F455B0901E8B80 /* Pods-InstaGLAM-InstaGLAMUITests-dummy.m */; };
+		9DD47D9265E98324696703CCB85D80EE /* id.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B2D76D6143869D88D221FCC9687CBD64 /* id.lproj */; };
+		9E10A0852E82F5016452EA5E936B38DC /* he.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A4D7BE5090E7299DB21B6DF3ABCF149D /* he.lproj */; };
+		9FBC20952CADBFD3FEEC71C0848FE52A /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 05D9C98FC359B3C88AD0178C367801B3 /* es.lproj */; };
+		A00187D9334A82A969F0C7BBDD5433E5 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 3C8E7C419C849CA26CBBFEBB00BB7645 /* zh-Hans.lproj */; };
+		A44FC246FAC3CDBE2156B5C9530648B9 /* da.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9DD1DFC5EC686CB871C9528EF1646747 /* da.lproj */; };
+		A51A04AEE86F0B43D76C7C2C0926E6B9 /* AppiraterDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C63977C94BAE2213528C40CD7F190C09 /* AppiraterDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3EB605A3C7DD1484162100700B26515 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2C73CE34EF9B1480101D04AE118D9A37 /* fr.lproj */; };
+		B5AD10075D81FAE8781FBB319AAFDC88 /* th.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D7CE4FBD421D90BEC11DA499DD69F1CA /* th.lproj */; };
+		C4A5E73787C663543956FE9EA34EE2CE /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B3F2CC456C71FF62006B16A11E467083 /* ja.lproj */; };
+		D673CD09EC028A31F84077332A27B950 /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7B68993E8D881534926B3C57585096FC /* zh-Hant.lproj */; };
+		D755F4C7ABCF1EE4043909E4FAC70B31 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B696849AAF54477C62936C9284CC2BCE /* SystemConfiguration.framework */; };
+		DC7771564CDA0414D5A94842AE4AC6DE /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5FA8436F1407A1D19327D62598E02BD7 /* ru.lproj */; };
+		E567FB687EAB592097B8218EF52018B6 /* Pods-InstaGLAM-InstaGLAMUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F170AC1F6B60B87E8525741C4FE323DE /* Pods-InstaGLAM-InstaGLAMUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9C96DA5CE640ADE038A2E8DC8B56E78 /* sv.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7357B37C08CEED2250F7D13CE2E755DB /* sv.lproj */; };
+		F4D140B67679F8DC7EA246BE2E64F5AB /* Appirater.h in Headers */ = {isa = PBXBuildFile; fileRef = D8EBEDD85E1C57D0840DFE3F53B46585 /* Appirater.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6701C80F14434AF8B606B3938266ACC /* ar.lproj in Resources */ = {isa = PBXBuildFile; fileRef = BF6D001E9D7B5A767AF64599E9301DFE /* ar.lproj */; };
+		F8ECBDBBEAF192A9E7B119943E2556CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E828CF164BCFD02A6A1F18E70222953 /* Foundation.framework */; };
+		FBCC8989B980D2F4A3C5397AA83796C6 /* Pods-InstaGLAM-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A04F79B03F410D56BB491AA941A492E /* Pods-InstaGLAM-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FECAFDBDB62EE25BB5FF2D859435AE6B /* vi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C71E2E1B1B486C990693944188E60AAE /* vi.lproj */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3DDEED9DE0E434A106527479A201A85E /* PBXContainerItemProxy */ = {
+		479C9F4C34DBA5B5A22CF08A8179193A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E56E80821D169C98E99A62EBCBC60B2C;
 			remoteInfo = "Appirater-Appirater";
 		};
-		68E927C5F20E9B303EEE4A04DB5AEE62 /* PBXContainerItemProxy */ = {
+		542C422C17A3D2EF1E0DA0235131B78F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0C8E8AEDD23CEEC9261F8C83D44B0A08;
 			remoteInfo = "Pods-InstaGLAM";
 		};
-		782E2A924362D8715983048ACC03D74B /* PBXContainerItemProxy */ = {
+		5E379B992CCC7BE13F9A4F9AEE52AA44 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CE9FA8ACD6205C77B753798CD736FAEF;
 			remoteInfo = Appirater;
 		};
-		DAAE8FDCB7AA7C82160C3EBD533FA9F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C8D67D8B72D6BA42CCEDB648537A340;
-			remoteInfo = SVProgressHUD;
-		};
-		DB042E115059B4FBE6C7BF1A4B8A5A05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C8D67D8B72D6BA42CCEDB648537A340;
-			remoteInfo = SVProgressHUD;
-		};
-		EDEE7CF8E4BAF54B182D2B5A479DBA7F /* PBXContainerItemProxy */ = {
+		A490D3D39A4AE32CAEDFD2765C9A4526 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -120,112 +93,94 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0092DCF3E8A5937E4275B576AC8C4C26 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
-		027634D28EA7F2A01A09A35A048E877A /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = pt.lproj; sourceTree = "<group>"; };
-		04F0C0783C14BF2A7C1899C842DB9602 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = de.lproj; sourceTree = "<group>"; };
-		0557800F141C82992ACB997098FBDF73 /* sk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = sk.lproj; sourceTree = "<group>"; };
+		05D9C98FC359B3C88AD0178C367801B3 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = es.lproj; sourceTree = "<group>"; };
 		07AE777731D9D50922BA9E0956ED7496 /* Pods-InstaGLAM-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InstaGLAM-Info.plist"; sourceTree = "<group>"; };
-		0925DFCBA4C37EB01AE09E3F21C589A0 /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = it.lproj; sourceTree = "<group>"; };
-		0A0C428020ECA88AE444DCB735368A40 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		1017E829320CC785C677E8282496B114 /* SVProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
-		1421DEB1707622EB147DF861F2B8365C /* ro.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ro.lproj; sourceTree = "<group>"; };
+		098D7BB4165870DD3852D7B0A30B2EF5 /* Appirater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Appirater.release.xcconfig; sourceTree = "<group>"; };
+		145D0F7A5529BDA9BF01D16309739EE1 /* Appirater-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Appirater-umbrella.h"; sourceTree = "<group>"; };
 		15880483925404E3D2F455B0901E8B80 /* Pods-InstaGLAM-InstaGLAMUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InstaGLAM-InstaGLAMUITests-dummy.m"; sourceTree = "<group>"; };
 		163B34F068DA50063805613C33B97AA4 /* Pods-InstaGLAMTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InstaGLAMTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1672109F021B0A7BE1BFE39FFE93945D /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ko.lproj; sourceTree = "<group>"; };
 		173736D43774DF054A564151FB376368 /* Pods-InstaGLAMTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InstaGLAMTests.modulemap"; sourceTree = "<group>"; };
 		1C8E99B97E19FDFB9AE7D365DB9CB899 /* Pods_InstaGLAM_InstaGLAMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_InstaGLAM_InstaGLAMUITests.framework; path = "Pods-InstaGLAM-InstaGLAMUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D03291C7943870DD723007B782A4B80 /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = sv.lproj; sourceTree = "<group>"; };
 		1E9CD753F6BD26760EFAA1DF57482D50 /* Appirater.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Appirater.bundle; path = "Appirater-Appirater.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC02D66593BA5E8F3B276AA4318B513 /* Pods-InstaGLAMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InstaGLAMTests.release.xcconfig"; sourceTree = "<group>"; };
 		20D5A3B254F8746664CCF8F31E74A6FC /* Pods-InstaGLAM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InstaGLAM.debug.xcconfig"; sourceTree = "<group>"; };
 		23D4D9F87518207E73E88D8FBC7C8DE3 /* Appirater.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Appirater.framework; path = Appirater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		28242ABC456EB09775C07C440181493F /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = pl.lproj; sourceTree = "<group>"; };
-		2BD84BFEA28861333184644E7E1F12FD /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
-		2BF4C60349B4A03C098E4B126451492D /* nb.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = nb.lproj; sourceTree = "<group>"; };
-		2CA1B218B857FC27FA2C6CA34A5F35B6 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ru.lproj; sourceTree = "<group>"; };
-		2CABD7E78F1AC17A6D73AB3D9174405E /* pt-BR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = "pt-BR.lproj"; sourceTree = "<group>"; };
-		2DC9F0B26B5081897CCF6F866787BF31 /* hy.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = hy.lproj; sourceTree = "<group>"; };
-		2EE865F9583B517C0060671924CEE143 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = fr.lproj; sourceTree = "<group>"; };
+		24E2A3A8AC4BBC9CF3A22A29CB7D84E2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		2C73CE34EF9B1480101D04AE118D9A37 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = fr.lproj; sourceTree = "<group>"; };
 		2F52A212F4A78E13F6046BEE430EDD50 /* Pods_InstaGLAM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_InstaGLAM.framework; path = "Pods-InstaGLAM.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		32BCB1AB4B2424B7524392A2D043AEB7 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
-		3C83FD9F9AC25B701ECE579C68C4FE47 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
-		415C36102992A95591684B2140172FA3 /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		341983AA4B6FBAA2B8C1740A8EA7F375 /* pt-BR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = "pt-BR.lproj"; sourceTree = "<group>"; };
+		3C8E7C419C849CA26CBBFEBB00BB7645 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = "zh-Hans.lproj"; sourceTree = "<group>"; };
+		3E828CF164BCFD02A6A1F18E70222953 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		416312A3BDDE7F120A266009B90973BF /* Pods-InstaGLAM-InstaGLAMUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InstaGLAM-InstaGLAMUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		448DFB0B24EE6231C03649985B6EECC4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		45C2601F7400484A3C68A00B13D38BE3 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = en.lproj; sourceTree = "<group>"; };
-		46DCEB6F45E83EC4695A02B81C89BF06 /* el.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = el.lproj; sourceTree = "<group>"; };
-		47D31692FBAA64A3D8258DE7B18BB74D /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
-		4AE62737F65818328370326C51982AC0 /* ca.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ca.lproj; sourceTree = "<group>"; };
-		4B93A3C378CF1A9F47D4A1E556B13BD3 /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = da.lproj; sourceTree = "<group>"; };
+		44D5632E65D206FE9D5EB02C0C8B415E /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = tr.lproj; sourceTree = "<group>"; };
+		4635E20AEC5108FDE3D6C9BCEDB02D19 /* fi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = fi.lproj; sourceTree = "<group>"; };
+		4A3F4D7A8E4A87535AE26491B95756BB /* uk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = uk.lproj; sourceTree = "<group>"; };
+		4ACFAE576E35648B7B28A99E418A1AB8 /* Appirater-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Appirater-prefix.pch"; sourceTree = "<group>"; };
 		4F5DF181E5B744F961A18755C3F1C528 /* Pods-InstaGLAM-InstaGLAMUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InstaGLAM-InstaGLAMUITests-Info.plist"; sourceTree = "<group>"; };
-		51A9EE064B86586D1D7B9D3F59485A20 /* Appirater.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Appirater.modulemap; sourceTree = "<group>"; };
-		53DBB8F17A34BF10E076BE6F1DFBE508 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
-		5AED0322D8E124FDB721E69F9CAC21FD /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		5ABC53B8E8DB48857702E03390003EA0 /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = cs.lproj; sourceTree = "<group>"; };
 		5D22B7735B5468EC988C133B2C3CA5E8 /* Pods-InstaGLAM-InstaGLAMUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InstaGLAM-InstaGLAMUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		61E5A2C1053C5483B047D5F6CEBF1BF4 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
-		64959C193422FA15831178F54477DA4E /* SVProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.release.xcconfig; sourceTree = "<group>"; };
+		5FA8436F1407A1D19327D62598E02BD7 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ru.lproj; sourceTree = "<group>"; };
 		66F3FDE5B65A2D2D76403184BEDFAC38 /* Pods_InstaGLAMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_InstaGLAMTests.framework; path = "Pods-InstaGLAMTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		692112D7E8BC841939C48B442C168D0D /* el.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = el.lproj; sourceTree = "<group>"; };
 		6C27E632AAC190BFFAAC2D98CB51589D /* Pods-InstaGLAM-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InstaGLAM-acknowledgements.plist"; sourceTree = "<group>"; };
-		772BD6E73AD48E8871D8EA22F32C3EB8 /* ms.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ms.lproj; sourceTree = "<group>"; };
-		7AE2CB514E69E3E606EE200263464B97 /* AppiraterDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AppiraterDelegate.h; sourceTree = "<group>"; };
+		7357B37C08CEED2250F7D13CE2E755DB /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = sv.lproj; sourceTree = "<group>"; };
 		7B55C533AFCEAC48C6750CC636D35801 /* Pods-InstaGLAM-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InstaGLAM-frameworks.sh"; sourceTree = "<group>"; };
-		7E33579FAB474DB3B435BEF0CEA3E2E3 /* fa.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = fa.lproj; sourceTree = "<group>"; };
+		7B68993E8D881534926B3C57585096FC /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = "zh-Hant.lproj"; sourceTree = "<group>"; };
+		82B16F71DF1205CC86659BCCB2E498CB /* fa.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = fa.lproj; sourceTree = "<group>"; };
 		830E0914A47A16F66C03BD82B12EA1C2 /* Pods-InstaGLAM-InstaGLAMUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InstaGLAM-InstaGLAMUITests.modulemap"; sourceTree = "<group>"; };
 		831802BEEAFDA227B9CBF66415AE8291 /* Pods-InstaGLAM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InstaGLAM.release.xcconfig"; sourceTree = "<group>"; };
-		88F61E889EE34E2D409A789E6DB45690 /* Appirater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Appirater.release.xcconfig; sourceTree = "<group>"; };
-		89017E95120BFAB988AA75F6A54A939E /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		8936F5EB15A6B715C5DEE3DE2AF1E72D /* uk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = uk.lproj; sourceTree = "<group>"; };
-		896A7CAF132A6A6B4535817BC43DB6F4 /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = cs.lproj; sourceTree = "<group>"; };
+		87BE3AF5E703D67BAD9B2259E68A24ED /* ro.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ro.lproj; sourceTree = "<group>"; };
+		89FDBB0F4B1ADB7CC69FF34882606673 /* Appirater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Appirater.debug.xcconfig; sourceTree = "<group>"; };
 		8A04F79B03F410D56BB491AA941A492E /* Pods-InstaGLAM-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InstaGLAM-umbrella.h"; sourceTree = "<group>"; };
-		8E4548E9789DD13B84BA979E828CB26C /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = tr.lproj; sourceTree = "<group>"; };
-		932A437D4481FCB3C0D89FA031E87AFC /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = "zh-Hans.lproj"; sourceTree = "<group>"; };
 		9D4991AE772B4472490C1028646C5686 /* Pods-InstaGLAM-InstaGLAMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InstaGLAM-InstaGLAMUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EA8C49CE96C26CCEB99E4D88B828033 /* Appirater-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Appirater-prefix.pch"; sourceTree = "<group>"; };
+		9DD1DFC5EC686CB871C9528EF1646747 /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = da.lproj; sourceTree = "<group>"; };
 		9EE94C80D24886B8048877971165DAF1 /* Pods-InstaGLAMTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InstaGLAMTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9F512CA74D5EBC5B50FB24DF57C10AA2 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = "zh-Hant.lproj"; sourceTree = "<group>"; };
-		A3BF06500D0B35574F8C16DED74D065E /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = vi.lproj; sourceTree = "<group>"; };
-		A703AD15F28CE5154239B7870DF78E05 /* SVProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SVProgressHUD-Info.plist"; sourceTree = "<group>"; };
-		A9C8D9695975BDC305EE36DBC240CA97 /* Appirater-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Appirater-dummy.m"; sourceTree = "<group>"; };
+		9EF6BE0CC2E68EFAD2736A0B9CF88CDE /* ms.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ms.lproj; sourceTree = "<group>"; };
+		A4D7BE5090E7299DB21B6DF3ABCF149D /* he.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = he.lproj; sourceTree = "<group>"; };
+		A4E7A7A0319FC95B23982B926716630A /* ResourceBundle-Appirater-Appirater-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Appirater-Appirater-Info.plist"; sourceTree = "<group>"; };
+		A5BADFE6DC3909088569B56109F0AF18 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = de.lproj; sourceTree = "<group>"; };
 		AC59F470C016C90C4494D236BE3EDD43 /* Pods-InstaGLAM-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InstaGLAM-dummy.m"; sourceTree = "<group>"; };
+		AD8D0B010B34C0FCE42DA81E82ACA802 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ko.lproj; sourceTree = "<group>"; };
 		AE82C82B28883928F490C910826DC1EA /* Pods-InstaGLAMTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-InstaGLAMTests-Info.plist"; sourceTree = "<group>"; };
-		B1B19226A2194D8941535106F26E5D1F /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = es.lproj; sourceTree = "<group>"; };
+		B238246CE9F14C07EA37E29ABFE38CFB /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = pt.lproj; sourceTree = "<group>"; };
+		B2D76D6143869D88D221FCC9687CBD64 /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = id.lproj; sourceTree = "<group>"; };
+		B2E3388BABC43E1520F9E83552ABAD9F /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = en.lproj; sourceTree = "<group>"; };
+		B3F2CC456C71FF62006B16A11E467083 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ja.lproj; sourceTree = "<group>"; };
 		B510658C6389E7395EE143795D3EAD3B /* Pods-InstaGLAM-InstaGLAMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InstaGLAM-InstaGLAMUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		B98E9F1F0373FFA326E7D0545773E896 /* he.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = he.lproj; sourceTree = "<group>"; };
+		B696849AAF54477C62936C9284CC2BCE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		BBD6E9AF02F45E73A386CA1EE445433A /* Pods-InstaGLAM.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-InstaGLAM.modulemap"; sourceTree = "<group>"; };
 		BC0EA45C2811037F9D1BAD1A8F3D8743 /* Pods-InstaGLAMTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InstaGLAMTests-umbrella.h"; sourceTree = "<group>"; };
-		BC63CBFCA32C32C0D5ACBAB0AACF0233 /* Appirater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
-		C43B1BC4D981CE08E5F4E3A9F1B75602 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BF6D001E9D7B5A767AF64599E9301DFE /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ar.lproj; sourceTree = "<group>"; };
+		C4CB8932280FCEA53C832D0D728EB3F6 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = nl.lproj; sourceTree = "<group>"; };
+		C63977C94BAE2213528C40CD7F190C09 /* AppiraterDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AppiraterDelegate.h; sourceTree = "<group>"; };
 		C66B98C1C749A8D416C89243AD2C3879 /* Pods-InstaGLAM-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-InstaGLAM-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C854A808443BD00E05FD6C9E5B94A3E3 /* ResourceBundle-Appirater-Appirater-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Appirater-Appirater-Info.plist"; sourceTree = "<group>"; };
-		CE20F06F7B6D76134F657539A0F08566 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		D4D80E03AA9198D257C3D08816BB354D /* th.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = th.lproj; sourceTree = "<group>"; };
-		DD7DFCF3F4F0FEA8DF73E89B4E580FFF /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ar.lproj; sourceTree = "<group>"; };
-		E1134017E52976A4F6A7045C50B44C1B /* Appirater-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Appirater-umbrella.h"; sourceTree = "<group>"; };
-		E15929E14D7FA7A53351991E712BD9FA /* Appirater.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
-		E21940F832625CE1BBB0B2BB354BE7F9 /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = id.lproj; sourceTree = "<group>"; };
-		E4A82195512D497640F7CC90B29878D8 /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = hu.lproj; sourceTree = "<group>"; };
-		E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA8120B0ADBAB41323CB92B9E9825A3B /* Appirater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Appirater.debug.xcconfig; sourceTree = "<group>"; };
+		C71E2E1B1B486C990693944188E60AAE /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = vi.lproj; sourceTree = "<group>"; };
+		CF66B0E4806561F2240387432AF747FB /* nb.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = nb.lproj; sourceTree = "<group>"; };
+		D30B7452A00CBE3C12CF54228E3D5814 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = pl.lproj; sourceTree = "<group>"; };
+		D7CE4FBD421D90BEC11DA499DD69F1CA /* th.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = th.lproj; sourceTree = "<group>"; };
+		D8EBEDD85E1C57D0840DFE3F53B46585 /* Appirater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
+		D99FA108D76B5D4A2556336B8F18ED68 /* hy.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = hy.lproj; sourceTree = "<group>"; };
+		DD252E1D23280D5038509CB0ED185F37 /* Appirater.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Appirater.modulemap; sourceTree = "<group>"; };
+		DFC89960D73982E73A25D9AF889BB277 /* ca.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ca.lproj; sourceTree = "<group>"; };
+		E1A6C23C570075739358C3F96C2671BB /* Appirater-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Appirater-Info.plist"; sourceTree = "<group>"; };
+		E5516C419550D60DD228FE3A8678FED5 /* sk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = sk.lproj; sourceTree = "<group>"; };
+		E67B1C004ACE190BDE4A3A665B34703E /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = it.lproj; sourceTree = "<group>"; };
+		EA4AEE4D95B204121D54CA098BE839F1 /* Appirater-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Appirater-dummy.m"; sourceTree = "<group>"; };
 		EB23F6A18799DB749C5231091422D7C9 /* Pods-InstaGLAM-InstaGLAMUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-InstaGLAM-InstaGLAMUITests-frameworks.sh"; sourceTree = "<group>"; };
 		ED019F5DC14813D637BDFDDDD46A4F47 /* Pods-InstaGLAMTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InstaGLAMTests-dummy.m"; sourceTree = "<group>"; };
-		EF7D46A7FC259A50E603FA0611EA0510 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
-		EFA99AA9E963B197A80C19B11A0E1C33 /* fi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = fi.lproj; sourceTree = "<group>"; };
+		EE382DAEFB9771608F9ADB6F4937D663 /* Appirater.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
 		F170AC1F6B60B87E8525741C4FE323DE /* Pods-InstaGLAM-InstaGLAMUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-InstaGLAM-InstaGLAMUITests-umbrella.h"; sourceTree = "<group>"; };
+		F2BA5D47CC59EA898BC5D4AC38A05601 /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = hu.lproj; sourceTree = "<group>"; };
 		F37D9345466B7C934F85EDE8B6C04989 /* Pods-InstaGLAMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-InstaGLAMTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F38491F149EAAE74E06C66A664023934 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = nl.lproj; sourceTree = "<group>"; };
-		F73AA924E0CD15C311059BA0AD452DCC /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
-		F86F897F9324C26ADEE3FE42CDA5A648 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ja.lproj; sourceTree = "<group>"; };
-		FA80D9D7E9C54EFED4AD1657AD22328E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		FDFE307740E9066EEDE711FDFD7E8FE4 /* Appirater-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Appirater-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		15051E5C886CF8F78081F6B654AEFE42 /* Frameworks */ = {
+		13C1164DF8D4359EA0E96EA7E143EB9C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D343E7390CAB8A0606EB4F364FB92ED /* Foundation.framework in Frameworks */,
+				7D7B64D7E875DA96ADF5DFB4E84DC182 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,21 +194,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		43801D7A87D5CC558A88005313EE3137 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		51B6B4FE54B612AFE762CF652AD0D8C4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				660A459CC88CDFC92EDE52237F6253C5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6B5C962CC479DBED4E16734C1D5109F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,18 +202,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B3D1D1191F24E31CEEA04BDB3FB4C0F2 /* Frameworks */ = {
+		931BEB11993968937501C7448D30068A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F52BD0341E46A6053B15014557ACB6A /* Foundation.framework in Frameworks */,
-				E28C2A4D11D0E714F957E6AEF7F92B9F /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		946619B941FEB01B726556979EAA9AC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B57BEF81FA1A91145E431DC99C1D369 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D70C9E1BCB87684B95B9F9C5E61FCDB4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		10AA3A746A5ECE4CB37916E867DE8175 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,121 +238,12 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		12B44E069DA61174F25B7872A6A24964 /* Appirater */ = {
+		3671D9460281A826C3194051A1659A85 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				BC63CBFCA32C32C0D5ACBAB0AACF0233 /* Appirater.h */,
-				E15929E14D7FA7A53351991E712BD9FA /* Appirater.m */,
-				7AE2CB514E69E3E606EE200263464B97 /* AppiraterDelegate.h */,
-				475AE94C0134EB7FCF1D761C2868D691 /* Resources */,
-				3BC8893FD7B9F7FAA98E83FDE355F806 /* Support Files */,
+				F398AC8C662640EA205C59C0C8FB817C /* Appirater */,
 			);
-			name = Appirater;
-			path = Appirater;
-			sourceTree = "<group>";
-		};
-		21C036F19A1A98A8F8C861773A4AA0B9 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				FA80D9D7E9C54EFED4AD1657AD22328E /* CFNetwork.framework */,
-				C43B1BC4D981CE08E5F4E3A9F1B75602 /* Foundation.framework */,
-				448DFB0B24EE6231C03649985B6EECC4 /* QuartzCore.framework */,
-				0A0C428020ECA88AE444DCB735368A40 /* SystemConfiguration.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		3BC8893FD7B9F7FAA98E83FDE355F806 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				51A9EE064B86586D1D7B9D3F59485A20 /* Appirater.modulemap */,
-				A9C8D9695975BDC305EE36DBC240CA97 /* Appirater-dummy.m */,
-				FDFE307740E9066EEDE711FDFD7E8FE4 /* Appirater-Info.plist */,
-				9EA8C49CE96C26CCEB99E4D88B828033 /* Appirater-prefix.pch */,
-				E1134017E52976A4F6A7045C50B44C1B /* Appirater-umbrella.h */,
-				EA8120B0ADBAB41323CB92B9E9825A3B /* Appirater.debug.xcconfig */,
-				88F61E889EE34E2D409A789E6DB45690 /* Appirater.release.xcconfig */,
-				C854A808443BD00E05FD6C9E5B94A3E3 /* ResourceBundle-Appirater-Appirater-Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Appirater";
-			sourceTree = "<group>";
-		};
-		462B9C8F5C92612AC000FD4E1935B510 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				32BCB1AB4B2424B7524392A2D043AEB7 /* SVProgressHUD.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		475AE94C0134EB7FCF1D761C2868D691 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				DD7DFCF3F4F0FEA8DF73E89B4E580FFF /* ar.lproj */,
-				4AE62737F65818328370326C51982AC0 /* ca.lproj */,
-				896A7CAF132A6A6B4535817BC43DB6F4 /* cs.lproj */,
-				4B93A3C378CF1A9F47D4A1E556B13BD3 /* da.lproj */,
-				04F0C0783C14BF2A7C1899C842DB9602 /* de.lproj */,
-				46DCEB6F45E83EC4695A02B81C89BF06 /* el.lproj */,
-				45C2601F7400484A3C68A00B13D38BE3 /* en.lproj */,
-				B1B19226A2194D8941535106F26E5D1F /* es.lproj */,
-				7E33579FAB474DB3B435BEF0CEA3E2E3 /* fa.lproj */,
-				EFA99AA9E963B197A80C19B11A0E1C33 /* fi.lproj */,
-				2EE865F9583B517C0060671924CEE143 /* fr.lproj */,
-				B98E9F1F0373FFA326E7D0545773E896 /* he.lproj */,
-				E4A82195512D497640F7CC90B29878D8 /* hu.lproj */,
-				2DC9F0B26B5081897CCF6F866787BF31 /* hy.lproj */,
-				E21940F832625CE1BBB0B2BB354BE7F9 /* id.lproj */,
-				0925DFCBA4C37EB01AE09E3F21C589A0 /* it.lproj */,
-				F86F897F9324C26ADEE3FE42CDA5A648 /* ja.lproj */,
-				1672109F021B0A7BE1BFE39FFE93945D /* ko.lproj */,
-				772BD6E73AD48E8871D8EA22F32C3EB8 /* ms.lproj */,
-				2BF4C60349B4A03C098E4B126451492D /* nb.lproj */,
-				F38491F149EAAE74E06C66A664023934 /* nl.lproj */,
-				28242ABC456EB09775C07C440181493F /* pl.lproj */,
-				027634D28EA7F2A01A09A35A048E877A /* pt.lproj */,
-				2CABD7E78F1AC17A6D73AB3D9174405E /* pt-BR.lproj */,
-				1421DEB1707622EB147DF861F2B8365C /* ro.lproj */,
-				2CA1B218B857FC27FA2C6CA34A5F35B6 /* ru.lproj */,
-				0557800F141C82992ACB997098FBDF73 /* sk.lproj */,
-				1D03291C7943870DD723007B782A4B80 /* sv.lproj */,
-				D4D80E03AA9198D257C3D08816BB354D /* th.lproj */,
-				8E4548E9789DD13B84BA979E828CB26C /* tr.lproj */,
-				8936F5EB15A6B715C5DEE3DE2AF1E72D /* uk.lproj */,
-				A3BF06500D0B35574F8C16DED74D065E /* vi.lproj */,
-				932A437D4481FCB3C0D89FA031E87AFC /* zh-Hans.lproj */,
-				9F512CA74D5EBC5B50FB24DF57C10AA2 /* zh-Hant.lproj */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		60D8A1A56C945E77110D85519DE2A403 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1E9CD753F6BD26760EFAA1DF57482D50 /* Appirater.bundle */,
-				23D4D9F87518207E73E88D8FBC7C8DE3 /* Appirater.framework */,
-				2F52A212F4A78E13F6046BEE430EDD50 /* Pods_InstaGLAM.framework */,
-				1C8E99B97E19FDFB9AE7D365DB9CB899 /* Pods_InstaGLAM_InstaGLAMUITests.framework */,
-				66F3FDE5B65A2D2D76403184BEDFAC38 /* Pods_InstaGLAMTests.framework */,
-				E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6582A568FA1563725334E2BCFCB798E2 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				3C83FD9F9AC25B701ECE579C68C4FE47 /* SVProgressHUD.modulemap */,
-				415C36102992A95591684B2140172FA3 /* SVProgressHUD-dummy.m */,
-				A703AD15F28CE5154239B7870DF78E05 /* SVProgressHUD-Info.plist */,
-				5AED0322D8E124FDB721E69F9CAC21FD /* SVProgressHUD-prefix.pch */,
-				EF7D46A7FC259A50E603FA0611EA0510 /* SVProgressHUD-umbrella.h */,
-				1017E829320CC785C677E8282496B114 /* SVProgressHUD.debug.xcconfig */,
-				64959C193422FA15831178F54477DA4E /* SVProgressHUD.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SVProgressHUD";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		6FE73D7C85ACEBC60F00542063BB2200 /* Pods-InstaGLAMTests */ = {
@@ -417,12 +262,20 @@
 			path = "Target Support Files/Pods-InstaGLAMTests";
 			sourceTree = "<group>";
 		};
-		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+		97D73344215476F1FC3E80F9B14CC700 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				21C036F19A1A98A8F8C861773A4AA0B9 /* iOS */,
+				DD252E1D23280D5038509CB0ED185F37 /* Appirater.modulemap */,
+				EA4AEE4D95B204121D54CA098BE839F1 /* Appirater-dummy.m */,
+				E1A6C23C570075739358C3F96C2671BB /* Appirater-Info.plist */,
+				4ACFAE576E35648B7B28A99E418A1AB8 /* Appirater-prefix.pch */,
+				145D0F7A5529BDA9BF01D16309739EE1 /* Appirater-umbrella.h */,
+				89FDBB0F4B1ADB7CC69FF34882606673 /* Appirater.debug.xcconfig */,
+				098D7BB4165870DD3852D7B0A30B2EF5 /* Appirater.release.xcconfig */,
+				A4E7A7A0319FC95B23982B926716630A /* ResourceBundle-Appirater-Appirater-Info.plist */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/Appirater";
 			sourceTree = "<group>";
 		};
 		CC4535F7B64F07358FDB7920786C2EB8 /* Pods-InstaGLAM-InstaGLAMUITests */ = {
@@ -446,20 +299,62 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
-				E64308B047E453F3EACE81F54629B2E4 /* Pods */,
-				60D8A1A56C945E77110D85519DE2A403 /* Products */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				3671D9460281A826C3194051A1659A85 /* Pods */,
+				F191B5978293A14283AC34BFFE101DBB /* Products */,
 				10AA3A746A5ECE4CB37916E867DE8175 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		E64308B047E453F3EACE81F54629B2E4 /* Pods */ = {
+		D70C9E1BCB87684B95B9F9C5E61FCDB4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				12B44E069DA61174F25B7872A6A24964 /* Appirater */,
-				F68EE0147B7FFD6FBD4DFAA29E6884CE /* SVProgressHUD */,
+				24E2A3A8AC4BBC9CF3A22A29CB7D84E2 /* CFNetwork.framework */,
+				3E828CF164BCFD02A6A1F18E70222953 /* Foundation.framework */,
+				B696849AAF54477C62936C9284CC2BCE /* SystemConfiguration.framework */,
 			);
-			name = Pods;
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E270A1CC6E3E201FB6AD5B97E027D3B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF6D001E9D7B5A767AF64599E9301DFE /* ar.lproj */,
+				DFC89960D73982E73A25D9AF889BB277 /* ca.lproj */,
+				5ABC53B8E8DB48857702E03390003EA0 /* cs.lproj */,
+				9DD1DFC5EC686CB871C9528EF1646747 /* da.lproj */,
+				A5BADFE6DC3909088569B56109F0AF18 /* de.lproj */,
+				692112D7E8BC841939C48B442C168D0D /* el.lproj */,
+				B2E3388BABC43E1520F9E83552ABAD9F /* en.lproj */,
+				05D9C98FC359B3C88AD0178C367801B3 /* es.lproj */,
+				82B16F71DF1205CC86659BCCB2E498CB /* fa.lproj */,
+				4635E20AEC5108FDE3D6C9BCEDB02D19 /* fi.lproj */,
+				2C73CE34EF9B1480101D04AE118D9A37 /* fr.lproj */,
+				A4D7BE5090E7299DB21B6DF3ABCF149D /* he.lproj */,
+				F2BA5D47CC59EA898BC5D4AC38A05601 /* hu.lproj */,
+				D99FA108D76B5D4A2556336B8F18ED68 /* hy.lproj */,
+				B2D76D6143869D88D221FCC9687CBD64 /* id.lproj */,
+				E67B1C004ACE190BDE4A3A665B34703E /* it.lproj */,
+				B3F2CC456C71FF62006B16A11E467083 /* ja.lproj */,
+				AD8D0B010B34C0FCE42DA81E82ACA802 /* ko.lproj */,
+				9EF6BE0CC2E68EFAD2736A0B9CF88CDE /* ms.lproj */,
+				CF66B0E4806561F2240387432AF747FB /* nb.lproj */,
+				C4CB8932280FCEA53C832D0D728EB3F6 /* nl.lproj */,
+				D30B7452A00CBE3C12CF54228E3D5814 /* pl.lproj */,
+				B238246CE9F14C07EA37E29ABFE38CFB /* pt.lproj */,
+				341983AA4B6FBAA2B8C1740A8EA7F375 /* pt-BR.lproj */,
+				87BE3AF5E703D67BAD9B2259E68A24ED /* ro.lproj */,
+				5FA8436F1407A1D19327D62598E02BD7 /* ru.lproj */,
+				E5516C419550D60DD228FE3A8678FED5 /* sk.lproj */,
+				7357B37C08CEED2250F7D13CE2E755DB /* sv.lproj */,
+				D7CE4FBD421D90BEC11DA499DD69F1CA /* th.lproj */,
+				44D5632E65D206FE9D5EB02C0C8B415E /* tr.lproj */,
+				4A3F4D7A8E4A87535AE26491B95756BB /* uk.lproj */,
+				C71E2E1B1B486C990693944188E60AAE /* vi.lproj */,
+				3C8E7C419C849CA26CBBFEBB00BB7645 /* zh-Hans.lproj */,
+				7B68993E8D881534926B3C57585096FC /* zh-Hant.lproj */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		EC957561B5C286919DE2EBA24A3BD84D /* Pods-InstaGLAM */ = {
@@ -479,52 +374,39 @@
 			path = "Target Support Files/Pods-InstaGLAM";
 			sourceTree = "<group>";
 		};
-		F68EE0147B7FFD6FBD4DFAA29E6884CE /* SVProgressHUD */ = {
+		F191B5978293A14283AC34BFFE101DBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				89017E95120BFAB988AA75F6A54A939E /* SVIndefiniteAnimatedView.h */,
-				CE20F06F7B6D76134F657539A0F08566 /* SVIndefiniteAnimatedView.m */,
-				47D31692FBAA64A3D8258DE7B18BB74D /* SVProgressAnimatedView.h */,
-				2BD84BFEA28861333184644E7E1F12FD /* SVProgressAnimatedView.m */,
-				61E5A2C1053C5483B047D5F6CEBF1BF4 /* SVProgressHUD.h */,
-				53DBB8F17A34BF10E076BE6F1DFBE508 /* SVProgressHUD.m */,
-				F73AA924E0CD15C311059BA0AD452DCC /* SVRadialGradientLayer.h */,
-				0092DCF3E8A5937E4275B576AC8C4C26 /* SVRadialGradientLayer.m */,
-				462B9C8F5C92612AC000FD4E1935B510 /* Resources */,
-				6582A568FA1563725334E2BCFCB798E2 /* Support Files */,
+				1E9CD753F6BD26760EFAA1DF57482D50 /* Appirater.bundle */,
+				23D4D9F87518207E73E88D8FBC7C8DE3 /* Appirater.framework */,
+				2F52A212F4A78E13F6046BEE430EDD50 /* Pods_InstaGLAM.framework */,
+				1C8E99B97E19FDFB9AE7D365DB9CB899 /* Pods_InstaGLAM_InstaGLAMUITests.framework */,
+				66F3FDE5B65A2D2D76403184BEDFAC38 /* Pods_InstaGLAMTests.framework */,
 			);
-			name = SVProgressHUD;
-			path = SVProgressHUD;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F398AC8C662640EA205C59C0C8FB817C /* Appirater */ = {
+			isa = PBXGroup;
+			children = (
+				D8EBEDD85E1C57D0840DFE3F53B46585 /* Appirater.h */,
+				EE382DAEFB9771608F9ADB6F4937D663 /* Appirater.m */,
+				C63977C94BAE2213528C40CD7F190C09 /* AppiraterDelegate.h */,
+				E270A1CC6E3E201FB6AD5B97E027D3B8 /* Resources */,
+				97D73344215476F1FC3E80F9B14CC700 /* Support Files */,
+			);
+			name = Appirater;
+			path = Appirater;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		18FA864F213C8E2841A226E1861A1A6B /* Headers */ = {
+		36825F4C2428BF17A734C87D6CD43F31 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66E8CD598ED61FAA20F8FF3D9892781D /* Pods-InstaGLAM-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50886EE376203101359D0711DA5C1D42 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3BE0FE95285AB5EBDA67F13E5BD3B848 /* Pods-InstaGLAM-InstaGLAMUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7C044C67F11489EFA3459B8399E7061C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				96EADE99073DBA8FCE7904627E2D18EE /* SVIndefiniteAnimatedView.h in Headers */,
-				E0186A63060F0EB3676F95CD0ACE0E18 /* SVProgressAnimatedView.h in Headers */,
-				DE12057AB8895931A0E9499619C5CFC8 /* SVProgressHUD-umbrella.h in Headers */,
-				0CA80ED7E59E6BCE64CEEE649A3C6D2F /* SVProgressHUD.h in Headers */,
-				D87B2D5ED73534ACF97CE0A52FA18AE4 /* SVRadialGradientLayer.h in Headers */,
+				E567FB687EAB592097B8218EF52018B6 /* Pods-InstaGLAM-InstaGLAMUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,45 +428,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DD91F15D7F2C20A693013D06AA7F276D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBCC8989B980D2F4A3C5397AA83796C6 /* Pods-InstaGLAM-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		0C8E8AEDD23CEEC9261F8C83D44B0A08 /* Pods-InstaGLAM */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88DBCCA0041FD6BA7957BC20DDF6D48C /* Build configuration list for PBXNativeTarget "Pods-InstaGLAM" */;
+			buildConfigurationList = D5A98563A0F44448E51DA95FF98BA72E /* Build configuration list for PBXNativeTarget "Pods-InstaGLAM" */;
 			buildPhases = (
-				18FA864F213C8E2841A226E1861A1A6B /* Headers */,
-				4C3421756FF0CE1738E7E09080A73C8D /* Sources */,
-				51B6B4FE54B612AFE762CF652AD0D8C4 /* Frameworks */,
-				99808A69088140863E9BEAE0DA66CBAA /* Resources */,
+				DD91F15D7F2C20A693013D06AA7F276D /* Headers */,
+				C84F4C9D6CE9D6BD48332B9F4D6815E7 /* Sources */,
+				946619B941FEB01B726556979EAA9AC4 /* Frameworks */,
+				5D37868108F6E465ADF48D8B1B84E925 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0592AFC1AF5B98FECA017C7BF3B236D2 /* PBXTargetDependency */,
-				5128056F60AD182F939C9EB97940DB5F /* PBXTargetDependency */,
+				5015DC75FDC4C461FB7AC091B37849A7 /* PBXTargetDependency */,
 			);
 			name = "Pods-InstaGLAM";
 			productName = "Pods-InstaGLAM";
 			productReference = 2F52A212F4A78E13F6046BEE430EDD50 /* Pods_InstaGLAM.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E76C288BA44757915CF3700D8A326EB7 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
-			buildPhases = (
-				7C044C67F11489EFA3459B8399E7061C /* Headers */,
-				D0233C648200ED130A278D7164E80914 /* Sources */,
-				B3D1D1191F24E31CEEA04BDB3FB4C0F2 /* Frameworks */,
-				7BB2E885B360CCC1AEF0C191542BA06E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SVProgressHUD;
-			productName = SVProgressHUD;
-			productReference = E97D43C46A45EE515A4DA3AF94398441 /* SVProgressHUD.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		52721432310EEF45DD3B671CE5F16B2E /* Pods-InstaGLAMTests */ = {
@@ -599,7 +470,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DC3C05637ADB409ABEAD3AF613EC87E9 /* PBXTargetDependency */,
+				59202D1397D817AC9506CAFE77701592 /* PBXTargetDependency */,
 			);
 			name = "Pods-InstaGLAMTests";
 			productName = "Pods-InstaGLAMTests";
@@ -608,18 +479,17 @@
 		};
 		BEFA4A154DD744C475AE4CA6767E94F1 /* Pods-InstaGLAM-InstaGLAMUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75534B9F01D45CBEDDD82F53D24E76B0 /* Build configuration list for PBXNativeTarget "Pods-InstaGLAM-InstaGLAMUITests" */;
+			buildConfigurationList = AFF78A469D5CC476663795375BC72AEA /* Build configuration list for PBXNativeTarget "Pods-InstaGLAM-InstaGLAMUITests" */;
 			buildPhases = (
-				50886EE376203101359D0711DA5C1D42 /* Headers */,
-				50565F74456D1C638DDDB04225FE9609 /* Sources */,
-				15051E5C886CF8F78081F6B654AEFE42 /* Frameworks */,
-				1A33D8883B3F366B9A26FA40A72C3B5B /* Resources */,
+				36825F4C2428BF17A734C87D6CD43F31 /* Headers */,
+				AC2BA847B27F2EB4EC4F4AEEDB4DD236 /* Sources */,
+				13C1164DF8D4359EA0E96EA7E143EB9C /* Frameworks */,
+				BE90BC135F92B1E454E2FD7584C88618 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				66ACA96BAAC27D52157EBF09BB805FFE /* PBXTargetDependency */,
-				032A06BCA8AA8F9259F2E6F569152D63 /* PBXTargetDependency */,
+				D134D55ECA1DF39780B69CB9D8884599 /* PBXTargetDependency */,
 			);
 			name = "Pods-InstaGLAM-InstaGLAMUITests";
 			productName = "Pods-InstaGLAM-InstaGLAMUITests";
@@ -638,7 +508,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				2E711E64C8F445646836317EC380E857 /* PBXTargetDependency */,
+				607FD1CA7F9B9460E4BE526A1CD53374 /* PBXTargetDependency */,
 			);
 			name = Appirater;
 			productName = Appirater;
@@ -647,11 +517,11 @@
 		};
 		E56E80821D169C98E99A62EBCBC60B2C /* Appirater-Appirater */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ECE5E0A772CD37475B65050DAF308F1E /* Build configuration list for PBXNativeTarget "Appirater-Appirater" */;
+			buildConfigurationList = 7604E3BD66F7062A0684E24016D52BF9 /* Build configuration list for PBXNativeTarget "Appirater-Appirater" */;
 			buildPhases = (
-				ED9BDE824F30F69136E66D350DE2746F /* Sources */,
-				43801D7A87D5CC558A88005313EE3137 /* Frameworks */,
-				265A95F88316B88EE5DD6339A674E723 /* Resources */,
+				FAFB465A09A5B400C7F63CC53F1763FB /* Sources */,
+				931BEB11993968937501C7448D30068A /* Frameworks */,
+				DA94B0992A019B8A265D357B0B25A01E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -680,7 +550,7 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 60D8A1A56C945E77110D85519DE2A403 /* Products */;
+			productRefGroup = F191B5978293A14283AC34BFFE101DBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -689,57 +559,15 @@
 				0C8E8AEDD23CEEC9261F8C83D44B0A08 /* Pods-InstaGLAM */,
 				BEFA4A154DD744C475AE4CA6767E94F1 /* Pods-InstaGLAM-InstaGLAMUITests */,
 				52721432310EEF45DD3B671CE5F16B2E /* Pods-InstaGLAMTests */,
-				1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1A33D8883B3F366B9A26FA40A72C3B5B /* Resources */ = {
+		5D37868108F6E465ADF48D8B1B84E925 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		265A95F88316B88EE5DD6339A674E723 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5A609B2365137FD1BA6C422D36B35AB8 /* ar.lproj in Resources */,
-				AC4F7C408F21F4FCA3CCFD4B4644CB62 /* ca.lproj in Resources */,
-				73FDE37AE686C54E28B360ACA75EC0DE /* cs.lproj in Resources */,
-				99DB9F4085FCE0EA3E11E817CB2E6D98 /* da.lproj in Resources */,
-				32037907392D2742D28D8D16D17D6E57 /* de.lproj in Resources */,
-				2AD359E704AF83E20E0A74C23361334E /* el.lproj in Resources */,
-				1D8166D9B7451828ACC46BA5EC91C156 /* en.lproj in Resources */,
-				44886AED5FB4D689528235756F9E7C56 /* es.lproj in Resources */,
-				457BBFFA7D71660D846A9245C7BE88E9 /* fa.lproj in Resources */,
-				F4D61257D65087FDF5CB524867AD8F73 /* fi.lproj in Resources */,
-				AB19EB23232D2046208B3EC8A860F812 /* fr.lproj in Resources */,
-				309F22E02708C1672586CEDDA582FBF7 /* he.lproj in Resources */,
-				F09542D9F19B7A530EEB57A7BE412623 /* hu.lproj in Resources */,
-				0582C0127938D46A8FE977F66F158788 /* hy.lproj in Resources */,
-				D3A53FA69A0F2D2FCC91965D2926CF19 /* id.lproj in Resources */,
-				B61DB9FE17DA3F23412CE438363380C6 /* it.lproj in Resources */,
-				125E407E10664F2488A895BA954AEFB2 /* ja.lproj in Resources */,
-				6D016B2A5759D279DBAC82AA1E88CCDE /* ko.lproj in Resources */,
-				CAD7465FDE3B7D4929DDF28626FEBE49 /* ms.lproj in Resources */,
-				54CDC66DEE67E9E4CF45D409C1FED295 /* nb.lproj in Resources */,
-				7E841D0B743607A7198B168F7FC6B07A /* nl.lproj in Resources */,
-				500DB5D279CC7AC1057FD6F0EBE4540F /* pl.lproj in Resources */,
-				66EDDF1ED0A6BE8BB3020FD6D9A9024C /* pt-BR.lproj in Resources */,
-				A000B655184229D54DFCA9DED9C4A9EC /* pt.lproj in Resources */,
-				35DACDD6B05F93043FDE53A662D2F1BA /* ro.lproj in Resources */,
-				C5554F1496972807753FC613FC54FB62 /* ru.lproj in Resources */,
-				3EB40DF3684C05D3C8D96590109C096E /* sk.lproj in Resources */,
-				A8736376687072F4E4D0760A062EE781 /* sv.lproj in Resources */,
-				D6EA82211D0469403F4E6AAFBFDE4665 /* th.lproj in Resources */,
-				7BA515CD761F547F941331564F5433DA /* tr.lproj in Resources */,
-				3509C91483C57A42A54740C741D72F70 /* uk.lproj in Resources */,
-				EDF9BFB4135969EF449F26D502E4C12A /* vi.lproj in Resources */,
-				5407A88D226644F1660E60FE134283B5 /* zh-Hans.lproj in Resources */,
-				8E031566993ED7E2535232C327108F9E /* zh-Hant.lproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -750,18 +578,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7BB2E885B360CCC1AEF0C191542BA06E /* Resources */ = {
+		BE90BC135F92B1E454E2FD7584C88618 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				264E1A478BDFA31DA6842749C72EA535 /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99808A69088140863E9BEAE0DA66CBAA /* Resources */ = {
+		DA94B0992A019B8A265D357B0B25A01E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6701C80F14434AF8B606B3938266ACC /* ar.lproj in Resources */,
+				8C92E12947C809F352A1282EAB550C1B /* ca.lproj in Resources */,
+				5F8BEE9F4A4E98EBDBD63B12C5EFFB84 /* cs.lproj in Resources */,
+				A44FC246FAC3CDBE2156B5C9530648B9 /* da.lproj in Resources */,
+				5EFBA87AEF80AC01BEE452AA2363E684 /* de.lproj in Resources */,
+				3CC8BB14BF0F8743104217C09CCAA826 /* el.lproj in Resources */,
+				5A985A636096D348FAEA7F8A552E7889 /* en.lproj in Resources */,
+				9FBC20952CADBFD3FEEC71C0848FE52A /* es.lproj in Resources */,
+				53A680AAEC4382564410C4818849BCF3 /* fa.lproj in Resources */,
+				2C4CCFB6ABB0F9D7B13D6E1F56B66558 /* fi.lproj in Resources */,
+				B3EB605A3C7DD1484162100700B26515 /* fr.lproj in Resources */,
+				9E10A0852E82F5016452EA5E936B38DC /* he.lproj in Resources */,
+				7B37CCFB08E1B94320BD49F27583AC0D /* hu.lproj in Resources */,
+				900EC0F45CE6556E2CC2D0793540A662 /* hy.lproj in Resources */,
+				9DD47D9265E98324696703CCB85D80EE /* id.lproj in Resources */,
+				8A176B7204C7BAC6B69293063C0EE751 /* it.lproj in Resources */,
+				C4A5E73787C663543956FE9EA34EE2CE /* ja.lproj in Resources */,
+				1D806311FB564D7F63ED4334BD08D5D5 /* ko.lproj in Resources */,
+				8ED178AA9BABAEFA59BE35B42AE3C122 /* ms.lproj in Resources */,
+				6B13F0E6D56CDC76D8651FBD0F71DA7B /* nb.lproj in Resources */,
+				6D756E6E3A9C63B43A4CC48EF22AEBC1 /* nl.lproj in Resources */,
+				34716A125EF0A0EE428F427B9480955E /* pl.lproj in Resources */,
+				85FCE67C910B1E790E4387C63AE0C69B /* pt-BR.lproj in Resources */,
+				45D5B25FCBC58781A1058C9A5525EA89 /* pt.lproj in Resources */,
+				3CC21D4BE7F278804FF319972A3CB160 /* ro.lproj in Resources */,
+				DC7771564CDA0414D5A94842AE4AC6DE /* ru.lproj in Resources */,
+				0222B4BBA45FB1F19B33B5B8D4E5CFAE /* sk.lproj in Resources */,
+				E9C96DA5CE640ADE038A2E8DC8B56E78 /* sv.lproj in Resources */,
+				B5AD10075D81FAE8781FBB319AAFDC88 /* th.lproj in Resources */,
+				75184AABB4F80A1DE7359D82E05E27A8 /* tr.lproj in Resources */,
+				7C489A83410EACBF15CF94E45CDECF11 /* uk.lproj in Resources */,
+				FECAFDBDB62EE25BB5FF2D859435AE6B /* vi.lproj in Resources */,
+				A00187D9334A82A969F0C7BBDD5433E5 /* zh-Hans.lproj in Resources */,
+				D673CD09EC028A31F84077332A27B950 /* zh-Hant.lproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -784,22 +645,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C3421756FF0CE1738E7E09080A73C8D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F62BDFE07EDA0D69B0B9C66C706C95F6 /* Pods-InstaGLAM-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50565F74456D1C638DDDB04225FE9609 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				05F2023151E1CC7AC2F513EE233A9026 /* Pods-InstaGLAM-InstaGLAMUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		80890A3C3C85CC3C3EE54A9202364F0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -809,19 +654,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0233C648200ED130A278D7164E80914 /* Sources */ = {
+		AC2BA847B27F2EB4EC4F4AEEDB4DD236 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5B9915F785CB47C5C07F0B698911B00 /* SVIndefiniteAnimatedView.m in Sources */,
-				EEAA1518C49804736C3F40117D064CBE /* SVProgressAnimatedView.m in Sources */,
-				9FDEEEE37349769B84A30B0105DFF456 /* SVProgressHUD-dummy.m in Sources */,
-				3392F8407B8C6F47A4E47436894642D8 /* SVProgressHUD.m in Sources */,
-				D2246BE5AF9C116D84444CC5C955BC02 /* SVRadialGradientLayer.m in Sources */,
+				9789027A5B6AC1FE2399C530FC06E540 /* Pods-InstaGLAM-InstaGLAMUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ED9BDE824F30F69136E66D350DE2746F /* Sources */ = {
+		C84F4C9D6CE9D6BD48332B9F4D6815E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FB1E71D23879B8AEA3D97A868E9B657 /* Pods-InstaGLAM-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFB465A09A5B400C7F63CC53F1763FB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -831,49 +680,39 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		032A06BCA8AA8F9259F2E6F569152D63 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SVProgressHUD;
-			target = 1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */;
-			targetProxy = DAAE8FDCB7AA7C82160C3EBD533FA9F1 /* PBXContainerItemProxy */;
-		};
-		0592AFC1AF5B98FECA017C7BF3B236D2 /* PBXTargetDependency */ = {
+		5015DC75FDC4C461FB7AC091B37849A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Appirater;
 			target = CE9FA8ACD6205C77B753798CD736FAEF /* Appirater */;
-			targetProxy = EDEE7CF8E4BAF54B182D2B5A479DBA7F /* PBXContainerItemProxy */;
+			targetProxy = 5E379B992CCC7BE13F9A4F9AEE52AA44 /* PBXContainerItemProxy */;
 		};
-		2E711E64C8F445646836317EC380E857 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Appirater-Appirater";
-			target = E56E80821D169C98E99A62EBCBC60B2C /* Appirater-Appirater */;
-			targetProxy = 3DDEED9DE0E434A106527479A201A85E /* PBXContainerItemProxy */;
-		};
-		5128056F60AD182F939C9EB97940DB5F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SVProgressHUD;
-			target = 1C8D67D8B72D6BA42CCEDB648537A340 /* SVProgressHUD */;
-			targetProxy = DB042E115059B4FBE6C7BF1A4B8A5A05 /* PBXContainerItemProxy */;
-		};
-		66ACA96BAAC27D52157EBF09BB805FFE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Appirater;
-			target = CE9FA8ACD6205C77B753798CD736FAEF /* Appirater */;
-			targetProxy = 782E2A924362D8715983048ACC03D74B /* PBXContainerItemProxy */;
-		};
-		DC3C05637ADB409ABEAD3AF613EC87E9 /* PBXTargetDependency */ = {
+		59202D1397D817AC9506CAFE77701592 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-InstaGLAM";
 			target = 0C8E8AEDD23CEEC9261F8C83D44B0A08 /* Pods-InstaGLAM */;
-			targetProxy = 68E927C5F20E9B303EEE4A04DB5AEE62 /* PBXContainerItemProxy */;
+			targetProxy = 542C422C17A3D2EF1E0DA0235131B78F /* PBXContainerItemProxy */;
+		};
+		607FD1CA7F9B9460E4BE526A1CD53374 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Appirater-Appirater";
+			target = E56E80821D169C98E99A62EBCBC60B2C /* Appirater-Appirater */;
+			targetProxy = 479C9F4C34DBA5B5A22CF08A8179193A /* PBXContainerItemProxy */;
+		};
+		D134D55ECA1DF39780B69CB9D8884599 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Appirater;
+			target = CE9FA8ACD6205C77B753798CD736FAEF /* Appirater */;
+			targetProxy = A490D3D39A4AE32CAEDFD2765C9A4526 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2523392A09D6E826DD64976C0C445393 /* Release */ = {
+		04925B8E3A4E6188B540BCB7F9B81CF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64959C193422FA15831178F54477DA4E /* SVProgressHUD.release.xcconfig */;
+			baseConfigurationReference = B510658C6389E7395EE143795D3EAD3B /* Pods-InstaGLAM-InstaGLAMUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -882,22 +721,76 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-InstaGLAM-InstaGLAMUITests/Pods-InstaGLAM-InstaGLAMUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
-				PRODUCT_MODULE_NAME = SVProgressHUD;
-				PRODUCT_NAME = SVProgressHUD;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InstaGLAM-InstaGLAMUITests/Pods-InstaGLAM-InstaGLAMUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3B3B457BA8D22E6A438FD4E6460D4884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 098D7BB4165870DD3852D7B0A30B2EF5 /* Appirater.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Appirater";
+				IBSC_MODULE = Appirater;
+				INFOPLIST_FILE = "Target Support Files/Appirater/ResourceBundle-Appirater-Appirater-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Appirater;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		41B12ECDB610BF66C5A78222182D2E27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D4991AE772B4472490C1028646C5686 /* Pods-InstaGLAM-InstaGLAMUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InstaGLAM-InstaGLAMUITests/Pods-InstaGLAM-InstaGLAMUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InstaGLAM-InstaGLAMUITests/Pods-InstaGLAM-InstaGLAMUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -905,9 +798,25 @@
 			};
 			name = Release;
 		};
+		4BD49B1739E1560B300BBF73F5C66CB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89FDBB0F4B1ADB7CC69FF34882606673 /* Appirater.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Appirater";
+				IBSC_MODULE = Appirater;
+				INFOPLIST_FILE = "Target Support Files/Appirater/ResourceBundle-Appirater-Appirater-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Appirater;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		715C38FFBA9BDA9F6507555C7831E25A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA8120B0ADBAB41323CB92B9E9825A3B /* Appirater.debug.xcconfig */;
+			baseConfigurationReference = 89FDBB0F4B1ADB7CC69FF34882606673 /* Appirater.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -939,10 +848,12 @@
 			};
 			name = Debug;
 		};
-		7D06A784025F8033DD359DE587B8DF28 /* Debug */ = {
+		852DEE23B1B5DAE227CDB2B6145C0B1F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1017E829320CC785C677E8282496B114 /* SVProgressHUD.debug.xcconfig */;
+			baseConfigurationReference = 831802BEEAFDA227B9CBF66415AE8291 /* Pods-InstaGLAM.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -951,27 +862,29 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-InstaGLAM/Pods-InstaGLAM-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
-				PRODUCT_MODULE_NAME = SVProgressHUD;
-				PRODUCT_NAME = SVProgressHUD;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InstaGLAM/Pods-InstaGLAM.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1139,79 +1052,9 @@
 			};
 			name = Release;
 		};
-		A88126A190FC1A550D9C5048CBDF6714 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88F61E889EE34E2D409A789E6DB45690 /* Appirater.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Appirater";
-				IBSC_MODULE = Appirater;
-				INFOPLIST_FILE = "Target Support Files/Appirater/ResourceBundle-Appirater-Appirater-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = Appirater;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		A8D6C54CBAAD328E4E1C69C04DA73FC0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D4991AE772B4472490C1028646C5686 /* Pods-InstaGLAM-InstaGLAMUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-InstaGLAM-InstaGLAMUITests/Pods-InstaGLAM-InstaGLAMUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-InstaGLAM-InstaGLAMUITests/Pods-InstaGLAM-InstaGLAMUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		AC1A717A2331CA974CEFCB7144C30DBA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA8120B0ADBAB41323CB92B9E9825A3B /* Appirater.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Appirater";
-				IBSC_MODULE = Appirater;
-				INFOPLIST_FILE = "Target Support Files/Appirater/ResourceBundle-Appirater-Appirater-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = Appirater;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		BFD19BF224B9C8B9791B5DBF26943A6A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88F61E889EE34E2D409A789E6DB45690 /* Appirater.release.xcconfig */;
+			baseConfigurationReference = 098D7BB4165870DD3852D7B0A30B2EF5 /* Appirater.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1237,118 +1080,6 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C560D3848950D519ED7971EE2C04ECBD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B510658C6389E7395EE143795D3EAD3B /* Pods-InstaGLAM-InstaGLAMUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-InstaGLAM-InstaGLAMUITests/Pods-InstaGLAM-InstaGLAMUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-InstaGLAM-InstaGLAMUITests/Pods-InstaGLAM-InstaGLAMUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CE9C3CB7E9434BB6EBEF06C5A57C40B0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20D5A3B254F8746664CCF8F31E74A6FC /* Pods-InstaGLAM.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-InstaGLAM/Pods-InstaGLAM-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-InstaGLAM/Pods-InstaGLAM.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F300FADB0C12D06EF3DF84EFF7B7BA63 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 831802BEEAFDA227B9CBF66415AE8291 /* Pods-InstaGLAM.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-InstaGLAM/Pods-InstaGLAM-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-InstaGLAM/Pods-InstaGLAM.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1393,6 +1124,43 @@
 			};
 			name = Debug;
 		};
+		FCE8636BC836B40B9EF747C4C111F413 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20D5A3B254F8746664CCF8F31E74A6FC /* Pods-InstaGLAM.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-InstaGLAM/Pods-InstaGLAM-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-InstaGLAM/Pods-InstaGLAM.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1414,20 +1182,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		75534B9F01D45CBEDDD82F53D24E76B0 /* Build configuration list for PBXNativeTarget "Pods-InstaGLAM-InstaGLAMUITests" */ = {
+		7604E3BD66F7062A0684E24016D52BF9 /* Build configuration list for PBXNativeTarget "Appirater-Appirater" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C560D3848950D519ED7971EE2C04ECBD /* Debug */,
-				A8D6C54CBAAD328E4E1C69C04DA73FC0 /* Release */,
+				4BD49B1739E1560B300BBF73F5C66CB2 /* Debug */,
+				3B3B457BA8D22E6A438FD4E6460D4884 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88DBCCA0041FD6BA7957BC20DDF6D48C /* Build configuration list for PBXNativeTarget "Pods-InstaGLAM" */ = {
+		AFF78A469D5CC476663795375BC72AEA /* Build configuration list for PBXNativeTarget "Pods-InstaGLAM-InstaGLAMUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE9C3CB7E9434BB6EBEF06C5A57C40B0 /* Debug */,
-				F300FADB0C12D06EF3DF84EFF7B7BA63 /* Release */,
+				04925B8E3A4E6188B540BCB7F9B81CF4 /* Debug */,
+				41B12ECDB610BF66C5A78222182D2E27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5A98563A0F44448E51DA95FF98BA72E /* Build configuration list for PBXNativeTarget "Pods-InstaGLAM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCE8636BC836B40B9EF747C4C111F413 /* Debug */,
+				852DEE23B1B5DAE227CDB2B6145C0B1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1437,24 +1214,6 @@
 			buildConfigurations = (
 				715C38FFBA9BDA9F6507555C7831E25A /* Debug */,
 				BFD19BF224B9C8B9791B5DBF26943A6A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E76C288BA44757915CF3700D8A326EB7 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D06A784025F8033DD359DE587B8DF28 /* Debug */,
-				2523392A09D6E826DD64976C0C445393 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ECE5E0A772CD37475B65050DAF308F1E /* Build configuration list for PBXNativeTarget "Appirater-Appirater" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AC1A717A2331CA974CEFCB7144C30DBA /* Debug */,
-				A88126A190FC1A550D9C5048CBDF6714 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
