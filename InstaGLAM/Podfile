@@ -7,7 +7,6 @@ target 'InstaGLAM' do
 
   # Pods for InstaGLAM
 pod 'Appirater'
-pod 'SVProgressHUD'
 
   target 'InstaGLAMTests' do
     inherit! :search_paths
