@@ -65,7 +65,7 @@ class SignUpViewController: UIViewController {
         button.setTitle("Sign Up", for: .normal)
         button.layer.masksToBounds = true
         button.cornerRadius = Constants.buttonCornerRadius
-        button.backgroundColor = .systemBlue
+        button.backgroundColor = .systemGreen
         button.setTitleColor(.white, for: .normal)
         return button
     }()
@@ -98,6 +98,8 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        registerBtn.addTarget(self, action: #selector(didTapRegisterBtn), for: .touchUpInside)
+        loginBtn.addTarget(self, action: #selector(didTapLoginBtn), for: .touchUpInside)
         addSubViews()
     }
     
@@ -105,25 +107,25 @@ class SignUpViewController: UIViewController {
         // assign frames
         super.viewDidLayoutSubviews()
         usernameTextField.frame = CGRect(x: 25.0,
-                                         y: view.safeAreaInsets.top + 20.0,
+                                         y: view.safeAreaInsets.top + 50.0,
                                          width: view.right - 50.0,
                                          height: Constants.textFieldsHeight)
         emailTextField.frame = CGRect(x: 25.0,
-                                      y: usernameTextField.bottom + 20.0,
+                                      y: usernameTextField.bottom + 10.0,
                                       width: view.right - 50.0,
                                       height: Constants.textFieldsHeight)
         passwordTextField.frame = CGRect(x: 25.0,
-                                         y: emailTextField.bottom + 20.0,
+                                         y: emailTextField.bottom + 10.0,
                                          width: view.right - 50.0,
                                          height: Constants.textFieldsHeight)
         registerBtn.frame = CGRect(x: 25.0,
-                                   y: passwordTextField.bottom + 40.0,
+                                   y: passwordTextField.bottom + 30.0,
                                    width: view.right - 50.0,
                                    height: Constants.buttonHeight)
-//        loginBtn.frame = CGRect(x: <#T##CGFloat#>,
-//                                y: <#T##CGFloat#>,
-//                                width: <#T##CGFloat#>,
-//                                height: <#T##CGFloat#>)
+        loginBtn.frame = CGRect(x: 25.0,
+                                y: registerBtn.bottom + 10.0,
+                                width: view.right - 50.0,
+                                height: Constants.buttonHeight)
         termsBtn.frame = CGRect(x: 25.0,
                                 y: view.bottom - 100.0,
                                 width: view.width - 50.0,
@@ -139,6 +141,28 @@ class SignUpViewController: UIViewController {
         view.addSubview(emailTextField)
         view.addSubview(passwordTextField)
         view.addSubview(registerBtn)
+        view.addSubview(loginBtn)
+        view.addSubview(termsBtn)
+        view.addSubview(privacyBtn)
     }
-
+    
+    @objc private func didTapRegisterBtn() {
+        
+    }
+    
+    @objc private func didTapLoginBtn() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc private func didTapPrivacyBtn() {
+        guard let url = URL(string: "https://help.instagram.com/519522125107875?helpref=page_content") else { return }
+        let viewController = SFSafariViewController(url: url)
+        present(viewController, animated: true)
+    }
+    
+    @objc private func didTapTermsBtn() {
+        guard let url = URL(string: "https://www.instagram.com/about/legal/terms/before-january-19-2013/#:~:text=Basic%20Terms&text=You%20may%20not%20post%20nude,or%20intimidate%20other%20Instagram%20users.") else { return }
+        let viewController = SFSafariViewController(url: url)
+        present(viewController, animated: true)
+    }
 }
