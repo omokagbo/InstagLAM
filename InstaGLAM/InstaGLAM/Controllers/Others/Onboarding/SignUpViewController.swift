@@ -10,6 +10,14 @@ import SafariServices
 
 class SignUpViewController: UIViewController {
     
+    enum SignupError: Error {
+        case missingUsername
+        case missingEmail
+        case invalidEmail
+        case missingPassword
+        case invalidPassword
+    }
+    
     private let usernameTextField: UITextField = {
         let field = UITextField()
         field.placeholder = "Username"
@@ -28,7 +36,6 @@ class SignUpViewController: UIViewController {
     
     private let emailTextField: UITextField = {
         let field =  UITextField()
-        field.isSecureTextEntry = true
         field.placeholder = "Email"
         field.returnKeyType = .continue
         field.leftViewMode = .always
@@ -147,7 +154,23 @@ class SignUpViewController: UIViewController {
     }
     
     @objc private func didTapRegisterBtn() {
-        
+        do {
+            try validateFields()
+            // implement signup
+        } catch SignupError.missingUsername {
+            self.showAlert(alertText: "Username Empty", alertMessage: "You need a username to create an account.")
+        } catch SignupError.missingEmail {
+            self.showAlert(alertText: "Email Empty", alertMessage: "You need an email to create an account.")
+        } catch SignupError.invalidEmail {
+            self.showAlert(alertText: "Invalid Email", alertMessage: "Please, enter in a valid email.")
+        } catch SignupError.missingPassword {
+            self.showAlert(alertText: "Password Empty", alertMessage: "Please enter in your password.")
+        } catch SignupError.invalidPassword {
+            self.showAlert(alertText: "Invalid Password",
+                           alertMessage: "Your password must be alphanumeric and it must be greater than or equal to 8 characters.")
+        } catch {
+            self.showAlert(alertText: "An Error Occured", alertMessage: "Unable to create an account. Please try again.")
+        }
     }
     
     @objc private func didTapLoginBtn() {
@@ -164,5 +187,27 @@ class SignUpViewController: UIViewController {
         guard let url = URL(string: "https://www.instagram.com/about/legal/terms/before-january-19-2013/#:~:text=Basic%20Terms&text=You%20may%20not%20post%20nude,or%20intimidate%20other%20Instagram%20users.") else { return }
         let viewController = SFSafariViewController(url: url)
         present(viewController, animated: true)
+    }
+    
+    func validateFields() throws {
+        guard let username = usernameTextField.text else { return }
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        
+        if username.isEmpty || username == "" {
+            throw SignupError.missingUsername
+        }
+        if email.isEmpty || username == "" {
+            throw SignupError.missingEmail
+        }
+        if !email.isValidEmail {
+            throw SignupError.invalidEmail
+        }
+        if password.isEmpty || password == "" {
+            throw SignupError.missingPassword
+        }
+        if !password.isValidPassword {
+            throw SignupError.invalidPassword
+        }
     }
 }
