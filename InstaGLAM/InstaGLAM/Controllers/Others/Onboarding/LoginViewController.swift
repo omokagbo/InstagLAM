@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import IQKeyboardManagerSwift
 import SafariServices
 
 class LoginViewController: UIViewController {
@@ -93,8 +92,6 @@ class LoginViewController: UIViewController {
         createAccountBtn.addTarget(self, action: #selector(didTapCreateAccount), for: .touchUpInside)
         termsBtn.addTarget(self, action: #selector(didTapTermsBtn), for: .touchUpInside)
         privacyBtn.addTarget(self, action: #selector(didTapPrivacyBtn), for: .touchUpInside)
-        userNameOrEmailTextField.delegate = self
-        passwordTextField.delegate = self
         view.backgroundColor = .systemBackground
         addSubViews()
     }
@@ -162,15 +159,35 @@ class LoginViewController: UIViewController {
     }
     
     @objc private func didTapLoginBtn() {
-        passwordTextField.resignFirstResponder()
-        userNameOrEmailTextField.resignFirstResponder()
-        if let username = userNameOrEmailTextField.text,
-           !username.isEmpty,
-           username != "",
+        // validate text fields
+        if let usernameOrEmail = userNameOrEmailTextField.text,
+           !usernameOrEmail.isEmpty,
+           usernameOrEmail != "",
            let password = passwordTextField.text,
            !password.isEmpty,
            password != "" {
             // implement login functionality
+            var userName: String?
+            var userEmail: String?
+            
+            if usernameOrEmail.contains("@"), usernameOrEmail.contains(".") {
+                // login with email
+                userEmail = usernameOrEmail
+            } else {
+                // login with username
+                userName = usernameOrEmail
+            }
+            AuthManager.shared.loginUser(username: userName,
+                                         email: userEmail,
+                                         password: password) { success in
+                if success {
+                    // log user in
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    // an error occured
+                    
+                }
+            }
         } else {
             self.showAlert(alertText: "Empty Fields", alertMessage: "Please Fill Out All Fields to Login")
         }
@@ -194,15 +211,4 @@ class LoginViewController: UIViewController {
         present(viewController, animated: true)
     }
     
-}
-
-extension LoginViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == userNameOrEmailTextField {
-            passwordTextField.becomeFirstResponder()
-        } else if textField == passwordTextField {
-            didTapLoginBtn()
-        }
-        return true
-    }
 }
