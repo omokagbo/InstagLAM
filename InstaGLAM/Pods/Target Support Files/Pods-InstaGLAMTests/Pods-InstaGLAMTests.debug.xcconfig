@@ -1,8 +1,8 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Appirater" "${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Appirater"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Appirater/Appirater.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SVProgressHUD/SVProgressHUD.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "Appirater" -framework "CFNetwork" -framework "QuartzCore" -framework "SVProgressHUD" -framework "SystemConfiguration" -weak_framework "StoreKit"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Appirater/Appirater.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "Appirater" -framework "CFNetwork" -framework "SystemConfiguration" -weak_framework "StoreKit"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

@@ -1,20 +1,16 @@
 PODS:
   - Appirater (2.3.1)
-  - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Appirater
-  - SVProgressHUD
 
 SPEC REPOS:
   trunk:
     - Appirater
-    - SVProgressHUD
 
 SPEC CHECKSUMS:
   Appirater: 44a4651f7912a17dc906b655f0c215d5bb768b84
-  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: d0c7245df355ad39be541ae71b54f8990ca52d0d
+PODFILE CHECKSUM: a89ddf0564ff6b7f687cb8849444c8202f2d6a13
 
 COCOAPODS: 1.10.1

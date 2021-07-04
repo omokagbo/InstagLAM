@@ -160,12 +160,8 @@ class LoginViewController: UIViewController {
     
     @objc private func didTapLoginBtn() {
         // validate text fields
-        if let usernameOrEmail = userNameOrEmailTextField.text,
-           !usernameOrEmail.isEmpty,
-           usernameOrEmail != "",
-           let password = passwordTextField.text,
-           !password.isEmpty,
-           password != "" {
+        if let usernameOrEmail = userNameOrEmailTextField.text, !usernameOrEmail.isEmpty, usernameOrEmail != "",
+           let password = passwordTextField.text, !password.isEmpty, password != "" {
             // implement login functionality
             var userName: String?
             var userEmail: String?
@@ -180,12 +176,14 @@ class LoginViewController: UIViewController {
             AuthManager.shared.loginUser(username: userName,
                                          email: userEmail,
                                          password: password) { success in
-                if success {
-                    // log user in
-                    self.dismiss(animated: true, completion: nil)
-                } else {
-                    // an error occured
-                    
+                DispatchQueue.main.async {
+                    if success {
+                        // log user in
+                        self.dismiss(animated: true, completion: nil)
+                    } else {
+                        // an error occured
+                        self.showAlert(alertText: "Login Unsuccessful", alertMessage: "Unable to log you in")
+                    }
                 }
             }
         } else {
@@ -195,8 +193,8 @@ class LoginViewController: UIViewController {
     
     @objc private func didTapCreateAccount() {
         let controller = SignUpViewController()
-        
-        present(controller, animated: true)
+        controller.title = "Create Account"
+        present(UINavigationController(rootViewController: controller), animated: true)
     }
     
     @objc private func didTapPrivacyBtn() {
