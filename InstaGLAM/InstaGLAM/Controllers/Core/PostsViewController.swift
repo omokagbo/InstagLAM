@@ -6,11 +6,18 @@
 //
 
 import UIKit
+import AVFoundation
 
 final class PostsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .systemBackground
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    private func didTapTakePicture() {
+        
     }
     
 }
