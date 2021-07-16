@@ -8,7 +8,7 @@
 import UIKit
 import FirebaseAuth
 
-class HomeViewController: UIViewController {
+final class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +23,11 @@ class HomeViewController: UIViewController {
         // check auth status
         if Auth.auth().currentUser == nil {
             // show login
-            let loginViewController = LoginViewController()
-            loginViewController.modalPresentationStyle = .fullScreen
-            loginViewController.modalTransitionStyle = .crossDissolve
-            present(loginViewController, animated: true)
+//            let loginViewController = LoginViewController()
+//            loginViewController.modalPresentationStyle = .fullScreen
+//            loginViewController.modalTransitionStyle = .crossDissolve
+//            present(loginViewController, animated: true)
+            presentLogin()
         }
     }
 }

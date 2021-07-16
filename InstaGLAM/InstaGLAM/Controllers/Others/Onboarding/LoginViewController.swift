@@ -8,7 +8,12 @@
 import UIKit
 import SafariServices
 
-class LoginViewController: UIViewController {
+final class LoginViewController: UIViewController {
+    
+    enum LoginError: Error {
+        case missingUsernameOrEmail
+        case missingPassword
+    }
     
     private let userNameOrEmailTextField: UITextField = {
         let field = UITextField()
@@ -159,22 +164,12 @@ class LoginViewController: UIViewController {
     }
     
     @objc private func didTapLoginBtn() {
-        // validate text fields
-        if let usernameOrEmail = userNameOrEmailTextField.text, !usernameOrEmail.isEmpty, usernameOrEmail != "",
-           let password = passwordTextField.text, !password.isEmpty, password != "" {
-            // implement login functionality
-            var userName: String?
-            var userEmail: String?
-            
-            if usernameOrEmail.contains("@"), usernameOrEmail.contains(".") {
-                // login with email
-                userEmail = usernameOrEmail
-            } else {
-                // login with username
-                userName = usernameOrEmail
-            }
-            AuthManager.shared.loginUser(username: userName,
-                                         email: userEmail,
+        do {
+            try validateTextFields()
+            guard let usernameorEmail = userNameOrEmailTextField.text else { return }
+            guard let password = passwordTextField.text else { return }
+            AuthManager.shared.loginUser(username: usernameorEmail,
+                                         email: usernameorEmail,
                                          password: password) { success in
                 DispatchQueue.main.async {
                     if success {
@@ -186,8 +181,12 @@ class LoginViewController: UIViewController {
                     }
                 }
             }
-        } else {
-            self.showAlert(alertText: "Empty Fields", alertMessage: "Please Fill Out All Fields to Login")
+        } catch LoginError.missingUsernameOrEmail {
+            self.showAlert(alertText: "Username or Email", alertMessage: "Please, enter your username or email to login")
+        } catch LoginError.missingPassword {
+            self.showAlert(alertText: "Password", alertMessage: "Please, enter your password to login")
+        } catch {
+            self.showAlert(alertText: "Error", alertMessage: "Unable to log in. Please, try again.")
         }
     }
     
@@ -207,6 +206,18 @@ class LoginViewController: UIViewController {
         guard let url = URL(string: "https://www.instagram.com/about/legal/terms/before-january-19-2013/#:~:text=Basic%20Terms&text=You%20may%20not%20post%20nude,or%20intimidate%20other%20Instagram%20users.") else { return }
         let viewController = SFSafariViewController(url: url)
         present(viewController, animated: true)
+    }
+    
+    func validateTextFields() throws {
+        guard let usernameOrEmail = userNameOrEmailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        
+        if usernameOrEmail.isEmpty || usernameOrEmail == "" {
+            throw LoginError.missingUsernameOrEmail
+        }
+        if password.isEmpty || password == "" {
+            throw LoginError.missingPassword
+        }
     }
     
 }

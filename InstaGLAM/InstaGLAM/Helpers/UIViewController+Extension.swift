@@ -41,4 +41,11 @@ extension UIViewController {
         let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
         return storyboard.instantiateViewController(withIdentifier: identifier) as! Self
     }
+    
+    func presentLogin() {
+        let loginViewController = LoginViewController()
+        loginViewController.modalPresentationStyle = .fullScreen
+        loginViewController.modalTransitionStyle = .crossDissolve
+        present(loginViewController, animated: true)
+    }
 }
