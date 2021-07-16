@@ -45,15 +45,6 @@
 		B416894B268E9B9E0069D938 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B416894A268E9B9E0069D938 /* DatabaseManager.swift */; };
 		B416894E268EA0C90069D938 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B416894D268EA0C90069D938 /* AuthManager.swift */; };
 		B4168950268EA1630069D938 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B416894F268EA1630069D938 /* StorageManager.swift */; };
-		B4168953268EA2BE0069D938 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B4168952268EA2BE0069D938 /* FirebaseAnalytics */; };
-		B4168957268EA2BE0069D938 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B4168956268EA2BE0069D938 /* FirebaseAuth */; };
-		B4168959268EA2BE0069D938 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = B4168958268EA2BE0069D938 /* FirebaseCrashlytics */; };
-		B416895B268EA2BE0069D938 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B416895A268EA2BE0069D938 /* FirebaseDatabase */; };
-		B416895F268EA2BE0069D938 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B416895E268EA2BE0069D938 /* FirebaseFirestore */; };
-		B416896B268EA2BE0069D938 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = B416896A268EA2BE0069D938 /* FirebaseRemoteConfig */; };
-		B416896D268EA2BE0069D938 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B416896C268EA2BE0069D938 /* FirebaseStorage */; };
-		B4168970268EAB270069D938 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B416896F268EAB270069D938 /* IQKeyboardManagerSwift */; };
-		B4168973268EACA60069D938 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B4168972268EACA60069D938 /* Kingfisher */; };
 		B4168975268EB6750069D938 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4168974268EB6750069D938 /* Constants.swift */; };
 		B44F5A9426A129A300FFB29D /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F5A9326A129A300FFB29D /* SettingsModel.swift */; };
 		B44F5A9626A12A0400FFB29D /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F5A9526A12A0400FFB29D /* SettingsViewModel.swift */; };
@@ -137,16 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B416895B268EA2BE0069D938 /* FirebaseDatabase in Frameworks */,
-				B4168953268EA2BE0069D938 /* FirebaseAnalytics in Frameworks */,
-				B416896B268EA2BE0069D938 /* FirebaseRemoteConfig in Frameworks */,
 				A2A305912BFFA207791EA9C4 /* Pods_InstaGLAM.framework in Frameworks */,
-				B4168959268EA2BE0069D938 /* FirebaseCrashlytics in Frameworks */,
-				B416896D268EA2BE0069D938 /* FirebaseStorage in Frameworks */,
-				B4168970268EAB270069D938 /* IQKeyboardManagerSwift in Frameworks */,
-				B416895F268EA2BE0069D938 /* FirebaseFirestore in Frameworks */,
-				B4168973268EACA60069D938 /* Kingfisher in Frameworks */,
-				B4168957268EA2BE0069D938 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +365,7 @@
 				B41688D3268E6CFC0069D938 /* Frameworks */,
 				B41688D4268E6CFC0069D938 /* Resources */,
 				5DE9D5D3075F99F77FD120AC /* [CP] Embed Pods Frameworks */,
+				B44F5AB326A23DA100FFB29D /* FirebaseCrashlytics */,
 			);
 			buildRules = (
 			);
@@ -390,15 +373,6 @@
 			);
 			name = InstaGLAM;
 			packageProductDependencies = (
-				B4168952268EA2BE0069D938 /* FirebaseAnalytics */,
-				B4168956268EA2BE0069D938 /* FirebaseAuth */,
-				B4168958268EA2BE0069D938 /* FirebaseCrashlytics */,
-				B416895A268EA2BE0069D938 /* FirebaseDatabase */,
-				B416895E268EA2BE0069D938 /* FirebaseFirestore */,
-				B416896A268EA2BE0069D938 /* FirebaseRemoteConfig */,
-				B416896C268EA2BE0069D938 /* FirebaseStorage */,
-				B416896F268EAB270069D938 /* IQKeyboardManagerSwift */,
-				B4168972268EACA60069D938 /* Kingfisher */,
 			);
 			productName = InstaGLAM;
 			productReference = B41688D6268E6CFC0069D938 /* InstaGLAM.app */;
@@ -476,9 +450,6 @@
 			);
 			mainGroup = B41688CD268E6CFB0069D938;
 			packageReferences = (
-				B4168951268EA2BE0069D938 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				B416896E268EAB270069D938 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
-				B4168971268EACA60069D938 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = B41688D7268E6CFC0069D938 /* Products */;
 			projectDirPath = "";
@@ -585,6 +556,26 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B44F5AB326A23DA100FFB29D /* FirebaseCrashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = FirebaseCrashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
 		};
 		DD1099F539B140C8AA935979 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -838,6 +829,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = FR92VWWUNN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstaGLAM/Resources/Info.plist;
@@ -867,6 +859,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = FR92VWWUNN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = InstaGLAM/Resources/Info.plist;
@@ -1028,81 +1021,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		B4168951268EA2BE0069D938 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.0;
-			};
-		};
-		B416896E268EAB270069D938 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
-		B4168971268EACA60069D938 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		B4168952268EA2BE0069D938 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B4168951268EA2BE0069D938 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
-		};
-		B4168956268EA2BE0069D938 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B4168951268EA2BE0069D938 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		B4168958268EA2BE0069D938 /* FirebaseCrashlytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B4168951268EA2BE0069D938 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseCrashlytics;
-		};
-		B416895A268EA2BE0069D938 /* FirebaseDatabase */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B4168951268EA2BE0069D938 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseDatabase;
-		};
-		B416895E268EA2BE0069D938 /* FirebaseFirestore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B4168951268EA2BE0069D938 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestore;
-		};
-		B416896A268EA2BE0069D938 /* FirebaseRemoteConfig */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B4168951268EA2BE0069D938 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseRemoteConfig;
-		};
-		B416896C268EA2BE0069D938 /* FirebaseStorage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B4168951268EA2BE0069D938 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseStorage;
-		};
-		B416896F268EAB270069D938 /* IQKeyboardManagerSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B416896E268EAB270069D938 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
-			productName = IQKeyboardManagerSwift;
-		};
-		B4168972268EACA60069D938 /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B4168971268EACA60069D938 /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B41688CE268E6CFB0069D938 /* Project object */;
 }
