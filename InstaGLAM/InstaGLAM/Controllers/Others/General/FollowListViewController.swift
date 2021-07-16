@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FollowListViewController: UIViewController {
+final class FollowListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

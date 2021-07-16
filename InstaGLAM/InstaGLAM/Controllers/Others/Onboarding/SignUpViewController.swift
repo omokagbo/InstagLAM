@@ -8,7 +8,7 @@
 import UIKit
 import SafariServices
 
-class SignUpViewController: UIViewController {
+final class SignUpViewController: UIViewController {
     
     enum SignupError: Error {
         case missingUsername
