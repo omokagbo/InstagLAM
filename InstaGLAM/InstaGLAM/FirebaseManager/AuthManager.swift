@@ -15,10 +15,10 @@ class AuthManager {
     
     // MARK: - FUNCTIONS TO MAKE CALLS TO FIREBASE
     
-    func registerNewUser(username: String,
-                         email: String,
-                         password: String,
-                         completion: @escaping (Bool) -> Void) {
+    public func registerNewUser(username: String,
+                                email: String,
+                                password: String,
+                                completion: @escaping (Bool) -> Void) {
         /*
          - check if username is available
          - check if email is available
@@ -54,10 +54,10 @@ class AuthManager {
     ///   - email: Email entered by the user
     ///   - password: Password entered by the user
     ///   - completion: completion to show if the user logs in successfully
-    func loginUser(username: String?,
-                   email: String?,
-                   password: String,
-                   completion: @escaping ((Bool) -> Void)) {
+    public func loginUser(username: String?,
+                          email: String?,
+                          password: String,
+                          completion: @escaping ((Bool) -> Void)) {
         if let email = email {
             // email login
             Auth.auth().signIn(withEmail: email, password: password) { result, error in
@@ -71,6 +71,20 @@ class AuthManager {
         }   else if let username = username {
             // username login
             print(username)
+        }
+    }
+    
+    /// Log out user from app
+    /// - Parameter completion: completion to show if the user successfully logs out
+    public func logout(completion: (Bool) -> Void) {
+        do {
+            try Auth.auth().signOut()
+            completion(true)
+            return
+        } catch {
+            debugPrint(error)
+            completion(false)
+            return
         }
     }
     

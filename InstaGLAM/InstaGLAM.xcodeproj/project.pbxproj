@@ -62,6 +62,8 @@
 		B4168970268EAB270069D938 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B416896F268EAB270069D938 /* IQKeyboardManagerSwift */; };
 		B4168973268EACA60069D938 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = B4168972268EACA60069D938 /* Kingfisher */; };
 		B4168975268EB6750069D938 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4168974268EB6750069D938 /* Constants.swift */; };
+		B44F5A9426A129A300FFB29D /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F5A9326A129A300FFB29D /* SettingsModel.swift */; };
+		B44F5A9626A12A0400FFB29D /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F5A9526A12A0400FFB29D /* SettingsViewModel.swift */; };
 		D4CFCAFCF026684372DEDBEC /* Pods_InstaGLAM_InstaGLAMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67A30F020EE042C43E00C84 /* Pods_InstaGLAM_InstaGLAMUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -131,6 +133,8 @@
 		B416894D268EA0C90069D938 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		B416894F268EA1630069D938 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		B4168974268EB6750069D938 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B44F5A9326A129A300FFB29D /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		B44F5A9526A12A0400FFB29D /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		B67A30F020EE042C43E00C84 /* Pods_InstaGLAM_InstaGLAMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaGLAM_InstaGLAMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE887724077B0FF61CDE711 /* Pods-InstaGLAM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaGLAM.release.xcconfig"; path = "Target Support Files/Pods-InstaGLAM/Pods-InstaGLAM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -219,9 +223,9 @@
 				B4168947268E9A1A0069D938 /* ViewModels */,
 				B4168943268E96200069D938 /* Models */,
 				B4168909268E6E680069D938 /* Controllers */,
-				B4168908268E6E610069D938 /* Views */,
-				B416890A268E6E6F0069D938 /* Resources */,
+				B416890D268E6F4F0069D938 /* Storyboards */,
 				B4168937268E762C0069D938 /* Helpers */,
+				B416890A268E6E6F0069D938 /* Resources */,
 			);
 			path = InstaGLAM;
 			sourceTree = "<group>";
@@ -249,14 +253,6 @@
 				B41688DB268E6CFC0069D938 /* SceneDelegate.swift */,
 			);
 			path = "App+Scene Delegate";
-			sourceTree = "<group>";
-		};
-		B4168908268E6E610069D938 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				B416890D268E6F4F0069D938 /* Storyboards */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		B4168909268E6E680069D938 /* Controllers */ = {
@@ -337,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				B4168944268E96310069D938 /* LoginResponse.swift */,
+				B44F5A9326A129A300FFB29D /* SettingsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -344,9 +341,9 @@
 		B4168946268E99C30069D938 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				B4168921268E71CA0069D938 /* SettingsViewController.swift */,
 				B416891D268E71610069D938 /* PostDetailsViewController.swift */,
 				B416891F268E71A60069D938 /* EditProfileViewController.swift */,
-				B4168921268E71CA0069D938 /* SettingsViewController.swift */,
 				B4168923268E720A0069D938 /* FollowListViewController.swift */,
 				B4168925268E72360069D938 /* SearchViewController.swift */,
 				B4168927268E72490069D938 /* SearchResultViewController.swift */,
@@ -360,6 +357,7 @@
 			isa = PBXGroup;
 			children = (
 				B4168948268E9A2B0069D938 /* HomeViewModel.swift */,
+				B44F5A9526A12A0400FFB29D /* SettingsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -673,6 +671,7 @@
 				B416891C268E70A20069D938 /* SignUpViewController.swift in Sources */,
 				B4168926268E72360069D938 /* SearchViewController.swift in Sources */,
 				B41688DC268E6CFC0069D938 /* SceneDelegate.swift in Sources */,
+				B44F5A9426A129A300FFB29D /* SettingsModel.swift in Sources */,
 				B4168939268E76FF0069D938 /* UIView+Extension.swift in Sources */,
 				B4168911268E6FBF0069D938 /* PostsViewController.swift in Sources */,
 				B416891E268E71610069D938 /* PostDetailsViewController.swift in Sources */,
@@ -681,6 +680,7 @@
 				B4168975268EB6750069D938 /* Constants.swift in Sources */,
 				B4168922268E71CA0069D938 /* SettingsViewController.swift in Sources */,
 				B4168945268E96310069D938 /* LoginResponse.swift in Sources */,
+				B44F5A9626A12A0400FFB29D /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
