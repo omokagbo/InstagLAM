@@ -177,7 +177,7 @@ final class LoginViewController: UIViewController {
                         self.dismiss(animated: true, completion: nil)
                     } else {
                         // an error occured
-                        self.showAlert(alertText: "Login Unsuccessful", alertMessage: "Unable to log you in")
+                        self.showAlert(alertText: "Login Unsuccessful", alertMessage: "Incorrect username or password.")
                     }
                 }
             }
