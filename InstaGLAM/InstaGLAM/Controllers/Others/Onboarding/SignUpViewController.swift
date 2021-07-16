@@ -156,7 +156,7 @@ class SignUpViewController: UIViewController {
     @objc private func didTapRegisterBtn() {
         do {
             try validateFields()
-            // implement signup
+            registerNewUser()
         } catch SignupError.missingUsername {
             self.showAlert(alertText: "Username Empty", alertMessage: "You need a username to create an account.")
         } catch SignupError.missingEmail {
@@ -170,6 +170,21 @@ class SignUpViewController: UIViewController {
                            alertMessage: "Your password must be alphanumeric and it must be greater than or equal to 8 characters.")
         } catch {
             self.showAlert(alertText: "An Error Occured", alertMessage: "Unable to create an account. Please try again.")
+        }
+    }
+    
+    private func registerNewUser() {
+        // implement signup
+        if let username = usernameTextField.text, let email = emailTextField.text, let password = passwordTextField.text {
+            AuthManager.shared.registerNewUser(username: username, email: email, password: password) { registered in
+                DispatchQueue.main.async {
+                    if registered {
+                        
+                    } else {
+                        
+                    }
+                }
+            }
         }
     }
     
