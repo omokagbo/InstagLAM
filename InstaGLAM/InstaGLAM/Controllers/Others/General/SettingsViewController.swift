@@ -12,7 +12,8 @@ final class SettingsViewController: UIViewController {
     private let viewModel: SettingsViewModel = SettingsViewModel()
     
     private let tableView: UITableView = {
-        let table = UITableView(frame: .zero, style: .grouped)
+        let table = UITableView(frame: .zero,
+                                style: .grouped)
         table.register(UITableViewCell.self, forCellReuseIdentifier:  "cell")
         return table
     }()
@@ -22,6 +23,8 @@ final class SettingsViewController: UIViewController {
         super.viewDidLoad()
         view.addSubview(tableView)
         view.backgroundColor = .systemBackground
+        tableView.delegate = self
+        tableView.dataSource = self
         configureModels()
     }
     
@@ -32,34 +35,49 @@ final class SettingsViewController: UIViewController {
     
     private func configureModels() {
         let section = [SettingsModel(title: "Log Out", handler: { [weak self] in
-            guard let self = self else {
-                return
-            }
-            self.didTapLogOut()
+            self?.didTapLogOut()
         })]
         viewModel.data.append(section)
     }
     
     private func didTapLogOut() {
-        AuthManager.shared.logout { loggedOut in
-            DispatchQueue.main.async {
-                if loggedOut {
-                    // log user out
-                    let loginViewController = LoginViewController()
-                    loginViewController.modalPresentationStyle = .fullScreen
-                    loginViewController.modalTransitionStyle = .crossDissolve
-                    self.present(loginViewController, animated: true) {
-                        self.navigationController?.popToRootViewController(animated: false)
-                        self.tabBarController?.selectedIndex = 0
+        let actionSheet = UIAlertController(title: "Log Out",
+                                            message: "Are you sure you want to log out?",
+                                            preferredStyle: .actionSheet)
+        actionSheet
+            .addAction(UIAlertAction(title: "Cancel",
+                                     style: .cancel, handler: nil))
+        actionSheet
+            .addAction(UIAlertAction(title: "Yes",
+                                     style: .destructive, handler: { _ in
+                AuthManager.shared.logout { loggedOut in
+                    DispatchQueue.main.async {
+                        if loggedOut {
+                            // present log in screen
+                            self.presentLogIn()
+                            
+                        } else {
+                            // throw error
+                            self.showAlert(alertText: "Log out unsuccessful", alertMessage: "Unable to log out. Please try again.")
+                        }
                     }
-                } else {
-                    // throw error
-                    
                 }
-            }
-        }
+            }))
+        actionSheet.popoverPresentationController?.sourceView = tableView
+        actionSheet.popoverPresentationController?.sourceRect = tableView.bounds
+        present(actionSheet, animated: true, completion: nil)
+        self.tabBarController?.selectedIndex = 0
     }
     
+    private func presentLogIn() {
+        let loginViewController = LoginViewController()
+        loginViewController.modalPresentationStyle = .fullScreen
+        loginViewController.modalTransitionStyle = .crossDissolve
+        present(loginViewController, animated: true) {
+            self.navigationController?.popToRootViewController(animated: false)
+//            self.tabBarController?.selectedIndex = 0
+        }
+    }
 }
 
 extension SettingsViewController: UITableViewDataSource {

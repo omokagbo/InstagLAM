@@ -30,20 +30,20 @@
             </objects>
             <point key="canvasLocation" x="-836" y="-441"/>
         </scene>
-        <!--HomeViewController-->
+        <!--Home-->
         <scene sceneID="Muq-Ek-FmY">
             <objects>
-                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="HomeViewController" id="vFc-De-FdJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="ZrU-vP-7hu"/>
+                <viewControllerPlaceholder storyboardName="Home" id="vFc-De-FdJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="gear" id="ZrU-vP-7hu"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nrz-G8-QtA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1446" y="36"/>
         </scene>
-        <!--ExploreViewController-->
+        <!--Explore-->
         <scene sceneID="vR3-JK-ysy">
             <objects>
-                <viewControllerPlaceholder storyboardName="Explore" referencedIdentifier="ExploreViewController" id="GU8-AH-3te" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Explore" id="GU8-AH-3te" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" id="kci-vR-9al">
                         <imageReference key="image" image="binoculars" catalog="system"/>
                     </tabBarItem>
@@ -52,30 +52,30 @@
             </objects>
             <point key="canvasLocation" x="-1162" y="71"/>
         </scene>
-        <!--PostsViewController-->
+        <!--Posts-->
         <scene sceneID="etT-BB-qyc">
             <objects>
-                <viewControllerPlaceholder storyboardName="Posts" referencedIdentifier="PostsViewController" id="7fd-6Q-Tfa" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Posts" id="7fd-6Q-Tfa" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="gTu-B0-aMQ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D9D-XB-fCf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-836" y="107"/>
         </scene>
-        <!--NotificationViewController-->
+        <!--Notification-->
         <scene sceneID="rfo-Rc-QIn">
             <objects>
-                <viewControllerPlaceholder storyboardName="Notification" referencedIdentifier="NotificationViewController" id="ndr-a0-QMp" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Notification" id="ndr-a0-QMp" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="lov-Z9-fPY"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oe5-sV-dFT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-440" y="60"/>
         </scene>
-        <!--ProfileViewController-->
+        <!--Profile-->
         <scene sceneID="gkn-wp-cJ8">
             <objects>
-                <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="ProfileViewController" id="eND-FZ-e9e" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Profile" id="eND-FZ-e9e" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="oeq-pB-co3"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hyB-fM-i3V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -85,6 +85,7 @@
     </scenes>
     <resources>
         <image name="binoculars" catalog="system" width="128" height="90"/>
+        <image name="gear" width="128" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
