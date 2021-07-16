@@ -55,7 +55,7 @@ final class SettingsViewController: UIViewController {
                         if loggedOut {
                             // present log in screen
                             self.presentLogIn()
-                            
+                            self.tabBarController?.selectedIndex = 0
                         } else {
                             // throw error
                             self.showAlert(alertText: "Log out unsuccessful", alertMessage: "Unable to log out. Please try again.")
@@ -66,7 +66,6 @@ final class SettingsViewController: UIViewController {
         actionSheet.popoverPresentationController?.sourceView = tableView
         actionSheet.popoverPresentationController?.sourceRect = tableView.bounds
         present(actionSheet, animated: true, completion: nil)
-        self.tabBarController?.selectedIndex = 0
     }
     
     private func presentLogIn() {

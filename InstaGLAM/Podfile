@@ -6,7 +6,20 @@ target 'InstaGLAM' do
   use_frameworks!
 
   # Pods for InstaGLAM
-pod 'Appirater'
+  pod 'Appirater'
+  pod 'IQKeyboardManagerSwift'
+  pod 'Kingfisher'
+  pod 'FirebaseCore'
+  pod 'FirebaseFirestore'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Crashlytics'
+  pod 'Firebase/Database'
+  pod 'Firebase/RemoteConfig'
+  pod 'FirebaseFirestoreSwift'
+  
+
 
   target 'InstaGLAMTests' do
     inherit! :search_paths
