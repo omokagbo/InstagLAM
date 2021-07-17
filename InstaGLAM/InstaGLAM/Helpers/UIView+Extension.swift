@@ -45,9 +45,3 @@ extension UIView {
         return String(describing: self)
     }
 }
-
-extension String {
-    var asUrl: URL? {
-        return URL(string: self)
-    }
-}
