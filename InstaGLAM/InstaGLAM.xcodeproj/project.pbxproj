@@ -40,7 +40,6 @@
 		B416893B268E772E0069D938 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B416893A268E772E0069D938 /* UIViewController+Extension.swift */; };
 		B416893D268E775A0069D938 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B416893C268E775A0069D938 /* String+Extension.swift */; };
 		B416893F268E89300069D938 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B416893E268E89300069D938 /* GoogleService-Info.plist */; };
-		B4168945268E96310069D938 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4168944268E96310069D938 /* LoginResponse.swift */; };
 		B4168949268E9A2B0069D938 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4168948268E9A2B0069D938 /* HomeViewModel.swift */; };
 		B416894B268E9B9E0069D938 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B416894A268E9B9E0069D938 /* DatabaseManager.swift */; };
 		B416894E268EA0C90069D938 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B416894D268EA0C90069D938 /* AuthManager.swift */; };
@@ -48,6 +47,11 @@
 		B4168975268EB6750069D938 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4168974268EB6750069D938 /* Constants.swift */; };
 		B44F5A9426A129A300FFB29D /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F5A9326A129A300FFB29D /* SettingsModel.swift */; };
 		B44F5A9626A12A0400FFB29D /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F5A9526A12A0400FFB29D /* SettingsViewModel.swift */; };
+		B44F5AB726A253E200FFB29D /* FeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F5AB626A253E200FFB29D /* FeedPostTableViewCell.swift */; };
+		B44F5ABA26A2E71700FFB29D /* FeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F5AB926A2E71700FFB29D /* FeedPostHeaderTableViewCell.swift */; };
+		B44F5ABC26A2E76A00FFB29D /* FeedPostActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F5ABB26A2E76A00FFB29D /* FeedPostActionTableViewCell.swift */; };
+		B44F5ABE26A2E79700FFB29D /* FeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F5ABD26A2E79700FFB29D /* FeedPostGeneralTableViewCell.swift */; };
+		B44F5AC126A2E8A800FFB29D /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F5AC026A2E8A800FFB29D /* UserPost.swift */; };
 		D4CFCAFCF026684372DEDBEC /* Pods_InstaGLAM_InstaGLAMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B67A30F020EE042C43E00C84 /* Pods_InstaGLAM_InstaGLAMUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -111,7 +115,6 @@
 		B416893A268E772E0069D938 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		B416893C268E775A0069D938 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		B416893E268E89300069D938 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B4168944268E96310069D938 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		B4168948268E9A2B0069D938 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		B416894A268E9B9E0069D938 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		B416894D268EA0C90069D938 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
@@ -119,6 +122,11 @@
 		B4168974268EB6750069D938 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B44F5A9326A129A300FFB29D /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		B44F5A9526A12A0400FFB29D /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		B44F5AB626A253E200FFB29D /* FeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostTableViewCell.swift; sourceTree = "<group>"; };
+		B44F5AB926A2E71700FFB29D /* FeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		B44F5ABB26A2E76A00FFB29D /* FeedPostActionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostActionTableViewCell.swift; sourceTree = "<group>"; };
+		B44F5ABD26A2E79700FFB29D /* FeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
+		B44F5AC026A2E8A800FFB29D /* UserPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
 		B67A30F020EE042C43E00C84 /* Pods_InstaGLAM_InstaGLAMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaGLAM_InstaGLAMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE887724077B0FF61CDE711 /* Pods-InstaGLAM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaGLAM.release.xcconfig"; path = "Target Support Files/Pods-InstaGLAM/Pods-InstaGLAM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,10 +196,10 @@
 			children = (
 				B4168907268E6E4E0069D938 /* App+Scene Delegate */,
 				B416894C268E9BF00069D938 /* FirebaseManager */,
-				B4168947268E9A1A0069D938 /* ViewModels */,
 				B4168943268E96200069D938 /* Models */,
+				B4168947268E9A1A0069D938 /* ViewModels */,
 				B4168909268E6E680069D938 /* Controllers */,
-				B416890D268E6F4F0069D938 /* Storyboards */,
+				B44F5AB426A250AC00FFB29D /* Views */,
 				B4168937268E762C0069D938 /* Helpers */,
 				B416890A268E6E6F0069D938 /* Resources */,
 			);
@@ -300,8 +308,8 @@
 		B4168943268E96200069D938 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B4168944268E96310069D938 /* LoginResponse.swift */,
 				B44F5A9326A129A300FFB29D /* SettingsModel.swift */,
+				B44F5AC026A2E8A800FFB29D /* UserPost.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -338,6 +346,34 @@
 				B416894F268EA1630069D938 /* StorageManager.swift */,
 			);
 			path = FirebaseManager;
+			sourceTree = "<group>";
+		};
+		B44F5AB426A250AC00FFB29D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B44F5AB526A250C200FFB29D /* Cells */,
+				B416890D268E6F4F0069D938 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B44F5AB526A250C200FFB29D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B44F5AB826A2E6CB00FFB29D /* Home Feed */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B44F5AB826A2E6CB00FFB29D /* Home Feed */ = {
+			isa = PBXGroup;
+			children = (
+				B44F5AB626A253E200FFB29D /* FeedPostTableViewCell.swift */,
+				B44F5AB926A2E71700FFB29D /* FeedPostHeaderTableViewCell.swift */,
+				B44F5ABB26A2E76A00FFB29D /* FeedPostActionTableViewCell.swift */,
+				B44F5ABD26A2E79700FFB29D /* FeedPostGeneralTableViewCell.swift */,
+			);
+			path = "Home Feed";
 			sourceTree = "<group>";
 		};
 		C4E2FE47F09C002FB1E35AC1 /* Pods */ = {
@@ -626,11 +662,13 @@
 				B4168920268E71A60069D938 /* EditProfileViewController.swift in Sources */,
 				B416894E268EA0C90069D938 /* AuthManager.swift in Sources */,
 				B4168950268EA1630069D938 /* StorageManager.swift in Sources */,
+				B44F5ABC26A2E76A00FFB29D /* FeedPostActionTableViewCell.swift in Sources */,
 				B4168949268E9A2B0069D938 /* HomeViewModel.swift in Sources */,
 				B416890F268E6FA30069D938 /* ExploreViewController.swift in Sources */,
 				B41688DE268E6CFC0069D938 /* HomeViewController.swift in Sources */,
 				B4168913268E6FCB0069D938 /* NotificationViewController.swift in Sources */,
 				B416894B268E9B9E0069D938 /* DatabaseManager.swift in Sources */,
+				B44F5ABA26A2E71700FFB29D /* FeedPostHeaderTableViewCell.swift in Sources */,
 				B41688DA268E6CFC0069D938 /* AppDelegate.swift in Sources */,
 				B416891A268E70790069D938 /* LoginViewController.swift in Sources */,
 				B416892A268E729F0069D938 /* EditPostsViewController.swift in Sources */,
@@ -640,16 +678,18 @@
 				B4168928268E72490069D938 /* SearchResultViewController.swift in Sources */,
 				B416891C268E70A20069D938 /* SignUpViewController.swift in Sources */,
 				B4168926268E72360069D938 /* SearchViewController.swift in Sources */,
+				B44F5AB726A253E200FFB29D /* FeedPostTableViewCell.swift in Sources */,
 				B41688DC268E6CFC0069D938 /* SceneDelegate.swift in Sources */,
 				B44F5A9426A129A300FFB29D /* SettingsModel.swift in Sources */,
 				B4168939268E76FF0069D938 /* UIView+Extension.swift in Sources */,
 				B4168911268E6FBF0069D938 /* PostsViewController.swift in Sources */,
+				B44F5ABE26A2E79700FFB29D /* FeedPostGeneralTableViewCell.swift in Sources */,
 				B416891E268E71610069D938 /* PostDetailsViewController.swift in Sources */,
 				B416892C268E72B70069D938 /* PublishPostsViewController.swift in Sources */,
 				B4168924268E720A0069D938 /* FollowListViewController.swift in Sources */,
+				B44F5AC126A2E8A800FFB29D /* UserPost.swift in Sources */,
 				B4168975268EB6750069D938 /* Constants.swift in Sources */,
 				B4168922268E71CA0069D938 /* SettingsViewController.swift in Sources */,
-				B4168945268E96310069D938 /* LoginResponse.swift in Sources */,
 				B44F5A9626A12A0400FFB29D /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
