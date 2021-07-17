@@ -197,15 +197,11 @@ final class LoginViewController: UIViewController {
     }
     
     @objc private func didTapPrivacyBtn() {
-        guard let url = URL(string: "https://help.instagram.com/519522125107875?helpref=page_content") else { return }
-        let viewController = SFSafariViewController(url: url)
-        present(viewController, animated: true)
+        self.privacyPolicy()
     }
     
     @objc private func didTapTermsBtn() {
-        guard let url = URL(string: "https://www.instagram.com/about/legal/terms/before-january-19-2013/#:~:text=Basic%20Terms&text=You%20may%20not%20post%20nude,or%20intimidate%20other%20Instagram%20users.") else { return }
-        let viewController = SFSafariViewController(url: url)
-        present(viewController, animated: true)
+        self.termsOfService()
     }
     
     func validateTextFields() throws {

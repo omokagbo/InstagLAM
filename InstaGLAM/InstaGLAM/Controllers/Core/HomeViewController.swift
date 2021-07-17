@@ -12,7 +12,7 @@ final class HomeViewController: UIViewController {
     
     private let tableView: UITableView = {
         let table = UITableView()
-        
+        table.register(FeedPostTableViewCell.self, forCellReuseIdentifier: FeedPostTableViewCell.identifier)
         return table
     }()
     
@@ -28,13 +28,17 @@ final class HomeViewController: UIViewController {
         handleAuthentication()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tableView.frame = view.bounds
+    }
+    
     // MARK: -  Methods
     
     private func setupTableView() {
         tableView.dataSource = self
         tableView.delegate = self
         view.addSubview(tableView)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
     private func handleAuthentication() {
@@ -48,12 +52,18 @@ final class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDataSource {
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 0
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: FeedPostTableViewCell.identifier, for: indexPath) as? FeedPostTableViewCell else {
+            return UITableViewCell()
+        }
         
         return cell
     }
