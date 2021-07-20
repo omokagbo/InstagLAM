@@ -70,6 +70,7 @@ final class SettingsViewController: UIViewController {
         let editProfileViewController = EditProfileViewController()
         editProfileViewController.title = "Edit Profile"
         let navigationController = UINavigationController(rootViewController: editProfileViewController)
+        navigationController.modalPresentationStyle = .fullScreen
         present(navigationController, animated: true)
     }
     

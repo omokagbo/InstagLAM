@@ -8,7 +8,7 @@ target 'InstaGLAM' do
   # Pods for InstaGLAM
   pod 'Appirater'
   pod 'IQKeyboardManagerSwift'
-  pod 'Kingfisher'
+  pod 'SDWebImage'
   pod 'FirebaseCore'
   pod 'FirebaseFirestore'
   pod 'Firebase/Analytics'
