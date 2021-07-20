@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-final class PostsViewController: UIViewController {
+final class NewPostViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
