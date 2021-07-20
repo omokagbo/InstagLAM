@@ -9,6 +9,8 @@ import UIKit
 
 final class ProfileViewController: UIViewController {
     
+    private let viewModel: ProfileViewModel = ProfileViewModel()
+    
     private var collectionView: UICollectionView?
     
     override func viewDidLoad() {
@@ -78,6 +80,7 @@ extension ProfileViewController: UICollectionViewDataSource {
         if section == 0 {
             return 0
         }
+//        return viewModel.userPosts.count
         return 30
     }
     
@@ -86,6 +89,8 @@ extension ProfileViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         cell.backgroundColor = .white
+        
+//        cell.configure(with: viewModel.userPosts[indexPath.row])
         cell.setup(with: "test")
         return cell
     }
@@ -99,14 +104,13 @@ extension ProfileViewController: UICollectionViewDataSource {
             guard let tabControlHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ProfileTabsCollectionReusableView.identifier, for: indexPath) as? ProfileTabsCollectionReusableView else {
                 return UICollectionReusableView()
             }
-            tabControlHeader.backgroundColor = .systemTeal
             return tabControlHeader
         }
         
         guard let profileHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ProfileInfoHeaderCollectionReusableView.identifier, for: indexPath) as? ProfileInfoHeaderCollectionReusableView else {
             return UICollectionReusableView()
         }
-        profileHeader.backgroundColor = .systemPink
+        profileHeader.delegate = self
         return profileHeader
     }
 }
@@ -114,6 +118,12 @@ extension ProfileViewController: UICollectionViewDataSource {
 extension ProfileViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
+        // get model and open posts controller
+//        let viewController = PostDetailsViewController(model: viewModel.userPosts[indexPath.row])
+        let viewController = PostDetailsViewController(model: nil)
+        viewController.title = "Posts"
+        viewController.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
@@ -123,6 +133,35 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: collectionView.width, height: collectionView.height / 3)
         }
         return CGSize(width: collectionView.width, height: 65)
-        
     }
+}
+
+extension ProfileViewController: ProfileInfoHeaderCollectionReusableViewDelegate {
+    
+    func didTapPostsButton(_ header: ProfileInfoHeaderCollectionReusableView) {
+        // scroll to posts section
+        collectionView?.scrollToItem(at: IndexPath(row: 0, section: 1), at: .top, animated: true)
+    }
+    
+    func didTapFollowersButton(_ header: ProfileInfoHeaderCollectionReusableView) {
+        let viewController = FollowListViewController()
+        viewController.title = "Followers"
+        viewController.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    func didTapFollowingButton(_ header: ProfileInfoHeaderCollectionReusableView) {
+        let viewController = FollowListViewController()
+        viewController.title = "Following"
+        viewController.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    func didTapEditProfileButton(_ header: ProfileInfoHeaderCollectionReusableView) {
+        let viewController = EditProfileViewController()
+        viewController.title = "Edit Profile"
+        viewController.modalPresentationStyle = .fullScreen
+        present(UINavigationController(rootViewController: viewController), animated: true, completion: nil)
+    }
+    
 }

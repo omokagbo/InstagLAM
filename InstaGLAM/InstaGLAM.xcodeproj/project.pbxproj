@@ -18,7 +18,7 @@
 		B41688F1268E6CFF0069D938 /* InstaGLAMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41688F0268E6CFF0069D938 /* InstaGLAMTests.swift */; };
 		B41688FB268E6CFF0069D938 /* InstaGLAMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41688FA268E6CFF0069D938 /* InstaGLAMUITests.swift */; };
 		B416890F268E6FA30069D938 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B416890E268E6FA30069D938 /* ExploreViewController.swift */; };
-		B4168911268E6FBF0069D938 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4168910268E6FBF0069D938 /* PostsViewController.swift */; };
+		B4168911268E6FBF0069D938 /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4168910268E6FBF0069D938 /* NewPostViewController.swift */; };
 		B4168913268E6FCB0069D938 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4168912268E6FCB0069D938 /* NotificationViewController.swift */; };
 		B4168915268E6FD70069D938 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4168914268E6FD70069D938 /* ProfileViewController.swift */; };
 		B416891A268E70790069D938 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4168919268E70790069D938 /* LoginViewController.swift */; };
@@ -45,6 +45,7 @@
 		B416894E268EA0C90069D938 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B416894D268EA0C90069D938 /* AuthManager.swift */; };
 		B4168950268EA1630069D938 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B416894F268EA1630069D938 /* StorageManager.swift */; };
 		B4168975268EB6750069D938 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4168974268EB6750069D938 /* Constants.swift */; };
+		B4387DA326A6F02B00921C0F /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4387DA226A6F02B00921C0F /* ProfileViewModel.swift */; };
 		B44F5A9426A129A300FFB29D /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F5A9326A129A300FFB29D /* SettingsModel.swift */; };
 		B44F5A9626A12A0400FFB29D /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F5A9526A12A0400FFB29D /* SettingsViewModel.swift */; };
 		B44F5AB726A253E200FFB29D /* FeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F5AB626A253E200FFB29D /* FeedPostTableViewCell.swift */; };
@@ -99,7 +100,7 @@
 		B41688F6268E6CFF0069D938 /* InstaGLAMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaGLAMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41688FA268E6CFF0069D938 /* InstaGLAMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaGLAMUITests.swift; sourceTree = "<group>"; };
 		B416890E268E6FA30069D938 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
-		B4168910268E6FBF0069D938 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		B4168910268E6FBF0069D938 /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		B4168912268E6FCB0069D938 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		B4168914268E6FD70069D938 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B4168919268E70790069D938 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +127,7 @@
 		B416894D268EA0C90069D938 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		B416894F268EA1630069D938 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		B4168974268EB6750069D938 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B4387DA226A6F02B00921C0F /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		B44F5A9326A129A300FFB29D /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		B44F5A9526A12A0400FFB29D /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		B44F5AB626A253E200FFB29D /* FeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostTableViewCell.swift; sourceTree = "<group>"; };
@@ -281,7 +283,7 @@
 			children = (
 				B41688DD268E6CFC0069D938 /* HomeViewController.swift */,
 				B416890E268E6FA30069D938 /* ExploreViewController.swift */,
-				B4168910268E6FBF0069D938 /* PostsViewController.swift */,
+				B4168910268E6FBF0069D938 /* NewPostViewController.swift */,
 				B4168912268E6FCB0069D938 /* NotificationViewController.swift */,
 				B4168914268E6FD70069D938 /* ProfileViewController.swift */,
 			);
@@ -348,6 +350,7 @@
 				B4168948268E9A2B0069D938 /* HomeViewModel.swift */,
 				B44F5A9526A12A0400FFB29D /* SettingsViewModel.swift */,
 				B44F5AC726A3532200FFB29D /* EditProfileViewModel.swift */,
+				B4387DA226A6F02B00921C0F /* ProfileViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -729,7 +732,7 @@
 				B44F5AC626A352C800FFB29D /* EditProfileFormModel.swift in Sources */,
 				B44F5A9426A129A300FFB29D /* SettingsModel.swift in Sources */,
 				B4168939268E76FF0069D938 /* UIView+Extension.swift in Sources */,
-				B4168911268E6FBF0069D938 /* PostsViewController.swift in Sources */,
+				B4168911268E6FBF0069D938 /* NewPostViewController.swift in Sources */,
 				B44F5ABE26A2E79700FFB29D /* FeedPostGeneralTableViewCell.swift in Sources */,
 				B44F5AC826A3532200FFB29D /* EditProfileViewModel.swift in Sources */,
 				B416891E268E71610069D938 /* PostDetailsViewController.swift in Sources */,
@@ -737,6 +740,7 @@
 				B4168924268E720A0069D938 /* FollowListViewController.swift in Sources */,
 				B44F5AC126A2E8A800FFB29D /* UserPost.swift in Sources */,
 				B4168975268EB6750069D938 /* Constants.swift in Sources */,
+				B4387DA326A6F02B00921C0F /* ProfileViewModel.swift in Sources */,
 				B4168922268E71CA0069D938 /* SettingsViewController.swift in Sources */,
 				B44F5A9626A12A0400FFB29D /* SettingsViewModel.swift in Sources */,
 			);
