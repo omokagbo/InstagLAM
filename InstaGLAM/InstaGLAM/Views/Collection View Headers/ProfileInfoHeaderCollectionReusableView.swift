@@ -23,6 +23,7 @@ class ProfileInfoHeaderCollectionReusableView: UICollectionReusableView {
     private let profilePhotoImageView: UIImageView = {
         let profilePhoto = UIImageView()
         profilePhoto.backgroundColor = .systemBlue
+        profilePhoto.image = UIImage(named: "test")
         profilePhoto.layer.masksToBounds = true
         return profilePhoto
     }()
@@ -31,7 +32,7 @@ class ProfileInfoHeaderCollectionReusableView: UICollectionReusableView {
         let button = UIButton()
         button.setTitle("Posts", for: .normal)
         button.setTitleColor(.label, for: .normal)
-        button.backgroundColor = .secondarySystemBackground
+//        button.backgroundColor = .secondarySystemBackground
         return button
     }()
     
@@ -39,7 +40,7 @@ class ProfileInfoHeaderCollectionReusableView: UICollectionReusableView {
         let button = UIButton()
         button.setTitle("Followers", for: .normal)
         button.setTitleColor(.label, for: .normal)
-        button.backgroundColor = .secondarySystemBackground
+//        button.backgroundColor = .secondarySystemBackground
         return button
     }()
     
@@ -47,7 +48,7 @@ class ProfileInfoHeaderCollectionReusableView: UICollectionReusableView {
         let button = UIButton()
         button.setTitle("Following", for: .normal)
         button.setTitleColor(.label, for: .normal)
-        button.backgroundColor = .secondarySystemBackground
+//        button.backgroundColor = .secondarySystemBackground
         return button
     }()
     
@@ -55,7 +56,7 @@ class ProfileInfoHeaderCollectionReusableView: UICollectionReusableView {
         let button = UIButton()
         button.setTitle("Edit Your Profile", for: .normal)
         button.setTitleColor(.label, for: .normal)
-        button.backgroundColor = .secondarySystemBackground
+//        button.backgroundColor = .secondarySystemBackground
         return button
     }()
     
@@ -63,7 +64,8 @@ class ProfileInfoHeaderCollectionReusableView: UICollectionReusableView {
         let label = UILabel()
         label.textColor = .label
         label.numberOfLines = 1
-        label.text = "Emmanuel Marabe"
+        label.text = "Emmanuel Omokagbo"
+        label.font = .boldSystemFont(ofSize: 20)
         return label
     }()
     
@@ -71,7 +73,7 @@ class ProfileInfoHeaderCollectionReusableView: UICollectionReusableView {
         let label = UILabel()
         label.textColor = .label
         label.numberOfLines = 0
-        label.text = "iOS Developer, changing the world one code at a time"
+        label.text = "💻 Software Engineer at Decagon."
         return label
     }()
     
@@ -121,14 +123,14 @@ class ProfileInfoHeaderCollectionReusableView: UICollectionReusableView {
                                        width: buttonWidth * 3,
                                        height: buttonHeight).integral
         
-        nameLabel.frame = CGRect(x: 5,
+        nameLabel.frame = CGRect(x: 10,
                                  y: 5 + profilePhotoImageView.bottom,
                                  width: width - 10,
                                  height: 50)
         
         let bioLabelSize = bioLabel.sizeThatFits(frame.size)
         
-        bioLabel.frame = CGRect(x: 5,
+        bioLabel.frame = CGRect(x: 10,
                                 y: 5 + nameLabel.bottom,
                                  width: width - 10,
                                 height: bioLabelSize.height)

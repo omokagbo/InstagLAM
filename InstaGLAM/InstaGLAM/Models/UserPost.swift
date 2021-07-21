@@ -26,6 +26,7 @@ struct User {
     let gender: Gender
     let counts: UserCounts
     let dateJoined: Date
+    let profilePhoto: URL
 }
 
 

@@ -20,6 +20,16 @@ final class ProfileViewController: UIViewController {
         setupCollectionView()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        collectionView?.frame = view.bounds
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        collectionView?.reloadData()
+    }
+    
     private func setupCollectionView() {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -49,11 +59,6 @@ final class ProfileViewController: UIViewController {
         collectionView.register(ProfileTabsCollectionReusableView.self,
                                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
                                 withReuseIdentifier: ProfileTabsCollectionReusableView.identifier)
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        collectionView?.frame = view.bounds
     }
     
     private func configureNavigationBar() {
@@ -104,6 +109,7 @@ extension ProfileViewController: UICollectionViewDataSource {
             guard let tabControlHeader = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ProfileTabsCollectionReusableView.identifier, for: indexPath) as? ProfileTabsCollectionReusableView else {
                 return UICollectionReusableView()
             }
+            tabControlHeader.delegate = self
             return tabControlHeader
         }
         
@@ -132,7 +138,7 @@ extension ProfileViewController: UICollectionViewDelegateFlowLayout {
         if section == 0 {
             return CGSize(width: collectionView.width, height: collectionView.height / 3)
         }
-        return CGSize(width: collectionView.width, height: 65)
+        return CGSize(width: collectionView.width, height: 50)
     }
 }
 
@@ -144,14 +150,30 @@ extension ProfileViewController: ProfileInfoHeaderCollectionReusableViewDelegate
     }
     
     func didTapFollowersButton(_ header: ProfileInfoHeaderCollectionReusableView) {
-        let viewController = FollowListViewController()
+        
+        var mockData = [UserRelationship]()
+        for i in 0..<10 {
+            mockData.append(UserRelationship(name: "Mary",
+                                             username: "@marybisi",
+                                             type: i % 2 == 0 ? .following : .notFollowing))
+        }
+
+        let viewController = ListViewController(models: mockData)
         viewController.title = "Followers"
         viewController.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(viewController, animated: true)
     }
     
     func didTapFollowingButton(_ header: ProfileInfoHeaderCollectionReusableView) {
-        let viewController = FollowListViewController()
+        
+        var mockData = [UserRelationship]()
+        for i in 0..<10 {
+            mockData.append(UserRelationship(name: "Mary",
+                                             username: "@marybisi",
+                                             type: i % 2 == 0 ? .following : .notFollowing))
+        }
+        
+        let viewController = ListViewController(models: mockData)
         viewController.title = "Following"
         viewController.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(viewController, animated: true)
@@ -162,6 +184,18 @@ extension ProfileViewController: ProfileInfoHeaderCollectionReusableViewDelegate
         viewController.title = "Edit Profile"
         viewController.modalPresentationStyle = .fullScreen
         present(UINavigationController(rootViewController: viewController), animated: true, completion: nil)
+    }
+    
+}
+
+extension ProfileViewController: ProfileTabsCollectionReusableViewDelegate {
+    
+    func didTapGridButton(_ header: ProfileTabsCollectionReusableView) {
+            // reload collection view with data
+    }
+    
+    func didTapTaggedButton(_ header: ProfileTabsCollectionReusableView) {
+            // reload collection view with data
     }
     
 }
