@@ -8,8 +8,9 @@
 import Foundation
 
 /// enum showing the different types of  post a user can make
-enum UserPostType {
-    case photo, video
+enum UserPostType: String {
+    case photo = "Photo"
+    case video = "Video"
 }
 
 /// enum showing genders
@@ -48,6 +49,7 @@ struct UserPost {
     let comments: [PostComment]
     let datePosted: Date
     let taggedUsers: [String]
+    let postOwner: User
 }
 
 /// struct showing details of the likes on a post

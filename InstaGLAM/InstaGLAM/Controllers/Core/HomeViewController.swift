@@ -10,6 +10,8 @@ import FirebaseAuth
 
 final class HomeViewController: UIViewController {
     
+    private var feedRenderModels = [HomeFeedRenderViewModel]()
+    
     private let tableView: UITableView = {
         let table = UITableView()
         table.register(FeedPostTableViewCell.self, forCellReuseIdentifier: FeedPostTableViewCell.identifier)

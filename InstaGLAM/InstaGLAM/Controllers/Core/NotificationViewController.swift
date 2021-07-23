@@ -87,7 +87,8 @@ final class NotificationViewController: UIViewController {
                             likeCount: [],
                             comments: [],
                             datePosted: Date(),
-                            taggedUsers: [])
+                            taggedUsers: [],
+                            postOwner: user)
         
         for i in 0..<100{
             
@@ -151,6 +152,15 @@ extension NotificationViewController: NotificationLikeEventTableViewCellDelegate
     func didTapRelatePostsBtn(model: UserNotification) {
         print("tapped post")
         // perform database update
+        switch model.type {
+        case .like(post: let post):
+            let viewController = PostDetailsViewController(model: post)
+            viewController.title = post.postType.rawValue
+            navigationItem.largeTitleDisplayMode = .never
+            navigationController?.pushViewController(viewController, animated: true)
+        case .follow(state: _):
+            return
+        }
     }
     
 }
