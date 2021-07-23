@@ -52,6 +52,8 @@
 		B4387DB026A89AFF00921C0F /* NotificationFollowEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4387DAF26A89AFF00921C0F /* NotificationFollowEventTableViewCell.swift */; };
 		B4387DB226A89B1600921C0F /* NotificationLikeEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4387DB126A89B1600921C0F /* NotificationLikeEventTableViewCell.swift */; };
 		B4387DB426A8A5F300921C0F /* UserNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4387DB326A8A5F300921C0F /* UserNotification.swift */; };
+		B4387DB626AA24F100921C0F /* PostRenderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4387DB526AA24F100921C0F /* PostRenderViewModel.swift */; };
+		B4387DB826AB113C00921C0F /* HomeFeedRenderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4387DB726AB113B00921C0F /* HomeFeedRenderViewModel.swift */; };
 		B44F5A9426A129A300FFB29D /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F5A9326A129A300FFB29D /* SettingsModel.swift */; };
 		B44F5A9626A12A0400FFB29D /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F5A9526A12A0400FFB29D /* SettingsViewModel.swift */; };
 		B44F5AB726A253E200FFB29D /* FeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44F5AB626A253E200FFB29D /* FeedPostTableViewCell.swift */; };
@@ -140,6 +142,8 @@
 		B4387DAF26A89AFF00921C0F /* NotificationFollowEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFollowEventTableViewCell.swift; sourceTree = "<group>"; };
 		B4387DB126A89B1600921C0F /* NotificationLikeEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLikeEventTableViewCell.swift; sourceTree = "<group>"; };
 		B4387DB326A8A5F300921C0F /* UserNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotification.swift; sourceTree = "<group>"; };
+		B4387DB526AA24F100921C0F /* PostRenderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRenderViewModel.swift; sourceTree = "<group>"; };
+		B4387DB726AB113B00921C0F /* HomeFeedRenderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedRenderViewModel.swift; sourceTree = "<group>"; };
 		B44F5A9326A129A300FFB29D /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		B44F5A9526A12A0400FFB29D /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		B44F5AB626A253E200FFB29D /* FeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostTableViewCell.swift; sourceTree = "<group>"; };
@@ -365,6 +369,8 @@
 				B44F5A9526A12A0400FFB29D /* SettingsViewModel.swift */,
 				B44F5AC726A3532200FFB29D /* EditProfileViewModel.swift */,
 				B4387DA226A6F02B00921C0F /* ProfileViewModel.swift */,
+				B4387DB526AA24F100921C0F /* PostRenderViewModel.swift */,
+				B4387DB726AB113B00921C0F /* HomeFeedRenderViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -756,6 +762,7 @@
 				B4387DA826A78DCD00921C0F /* UserFollowTableViewCell.swift in Sources */,
 				B44F5ACF26A4979200FFB29D /* PhotoCollectionViewCell.swift in Sources */,
 				B416890F268E6FA30069D938 /* ExploreViewController.swift in Sources */,
+				B4387DB626AA24F100921C0F /* PostRenderViewModel.swift in Sources */,
 				B41688DE268E6CFC0069D938 /* HomeViewController.swift in Sources */,
 				B4168913268E6FCB0069D938 /* NotificationViewController.swift in Sources */,
 				B4387DAD26A851DF00921C0F /* NoNotificationsView.swift in Sources */,
@@ -770,6 +777,7 @@
 				B4168915268E6FD70069D938 /* ProfileViewController.swift in Sources */,
 				B416893D268E775A0069D938 /* String+Extension.swift in Sources */,
 				B4387DB026A89AFF00921C0F /* NotificationFollowEventTableViewCell.swift in Sources */,
+				B4387DB826AB113C00921C0F /* HomeFeedRenderViewModel.swift in Sources */,
 				B416893B268E772E0069D938 /* UIViewController+Extension.swift in Sources */,
 				B4168928268E72490069D938 /* SearchResultViewController.swift in Sources */,
 				B416891C268E70A20069D938 /* SignUpViewController.swift in Sources */,
