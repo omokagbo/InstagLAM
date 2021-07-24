@@ -56,26 +56,24 @@ final class HomeViewController: UIViewController {
         }
     }
     
+    let newPost = UserPost(identifier: "13",
+                           postType: .photo,
+                           thumbnailImage: URL(string: "https://www.google.com")!,
+                           postURL: URL(string: "https://www.google.com")!, caption: nil,
+                           likeCount: [],
+                           comments: [],
+                           datePosted: Date(),
+                           taggedUsers: [],
+                           postOwner: User(username: "@Emar",
+                                           bio: "Frontend engineer",
+                                           name: (first: "", last: ""),
+                                           birthDate: Date(),
+                                           gender: .male,
+                                           counts: .init(followers: 12, following: 34, posts: 44),
+                                           dateJoined: Date(),
+                                           profilePhoto: URL(string: "https://www.google.com")!))
+    
     private func createMockModels() {
-        
-        let user = User(username: "@ruth",
-                        bio: "Frontend engineer",
-                        name: (first: "", last: ""),
-                        birthDate: Date(),
-                        gender: .male,
-                        counts: .init(followers: 12, following: 34, posts: 44),
-                        dateJoined: Date(),
-                        profilePhoto: URL(string: "https://www.google.com")!)
-        
-        let newPost = UserPost(identifier: "13",
-                               postType: .photo,
-                               thumbnailImage: URL(string: "https://www.google.com")!,
-                               postURL: URL(string: "https://www.google.com")!, caption: nil,
-                               likeCount: [],
-                               comments: [],
-                               datePosted: Date(),
-                               taggedUsers: [],
-                               postOwner: user)
         
         var comments = [PostComment]()
         for x in 0...5 {
@@ -86,7 +84,7 @@ final class HomeViewController: UIViewController {
                                         likes: []))
         }
         
-        let header = PostRenderViewModel(renderType: .header(provider: user))
+        let header = PostRenderViewModel(renderType: .header(provider: newPost.postOwner))
         let post = PostRenderViewModel(renderType: .primaryContent(provider: newPost))
         let action = PostRenderViewModel(renderType: .actions(provider: "Hello"))
         let comment = PostRenderViewModel(renderType: .comments(comments: comments))
@@ -158,6 +156,8 @@ extension HomeViewController: UITableViewDataSource {
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: FeedPostHeaderTableViewCell.identifier, for: indexPath) as? FeedPostHeaderTableViewCell else {
                     return UITableViewCell()
                 }
+                cell.configure(with: newPost.postOwner)
+                cell.delegate = self
                 return cell
             case .primaryContent(_): break
             case .actions(_): break
@@ -171,6 +171,7 @@ extension HomeViewController: UITableViewDataSource {
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: FeedPostTableViewCell.identifier, for: indexPath) as? FeedPostTableViewCell else {
                     return UITableViewCell()
                 }
+                cell.configure(with: newPost)
                 return cell
             case .actions(_): break
             case .comments(_): break
@@ -184,6 +185,7 @@ extension HomeViewController: UITableViewDataSource {
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: FeedPostActionTableViewCell.identifier, for: indexPath) as? FeedPostActionTableViewCell else {
                     return UITableViewCell()
                 }
+                cell.delegate = self
                 return cell
             case .comments(_): break
             }
@@ -233,4 +235,37 @@ extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
+}
+
+extension HomeViewController: FeedPostHeaderTableViewCellDelegate {
+    func didTapMoreButton(sender: FeedPostHeaderTableViewCell) {
+        print("more button tapped")
+        let actionSheet = UIAlertController(title: "Post Options", message: nil, preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { [weak self] _ in
+            // present report view controller
+            print("post successfully reported.")
+            self?.reportPost()
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Report Post", style: .destructive, handler: nil))
+        present(actionSheet, animated: true)
+    }
+    
+    func reportPost() {
+        
+    }
+}
+
+extension HomeViewController: FeedPostActionTableViewCellDelegate {
+    func didTapLikeButton(sender: FeedPostActionTableViewCell) {
+        self.showAlert(alertText: "Like", alertMessage: "Like Button Tapped")
+    }
+    
+    func didTapCommentButton(sender: FeedPostActionTableViewCell) {
+        self.showAlert(alertText: "Comment", alertMessage: "Comment Button Tapped")
+    }
+    
+    func didTapSendButton(sender: FeedPostActionTableViewCell) {
+        self.showAlert(alertText: "Send", alertMessage: "Send Button Tapped")
+    }
+    
 }
