@@ -2,6 +2,10 @@
 
 A clone of the Instagram App using Firebase for the backend service. Users can create account and login with their details.
 
+# Requirements
+- iOS 14.5 and above
+- Xcode 13
+
 
 # Features
 
