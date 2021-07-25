@@ -4,7 +4,7 @@ A clone of the Instagram App using Firebase for the backend service. Users can c
 
 # Requirements
 - iOS 14.5 and above
-- Xcode 13
+- Xcode 13 (9.3 compatible)
 
 
 # Features
