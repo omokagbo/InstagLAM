@@ -74,6 +74,23 @@ final class ProfileViewController: UIViewController {
         settingsViewController.title = "Settings"
         navigationController?.pushViewController(settingsViewController, animated: true)
     }
+    
+    let post = UserPost(identifier: "13",
+                        postType: .photo,
+                        thumbnailImage: URL(string: "https://www.google.com")!,
+                        postURL: URL(string: "https://www.google.com")!, caption: nil,
+                        likeCount: [],
+                        comments: [],
+                        datePosted: Date(),
+                        taggedUsers: [],
+                        postOwner: User(username: "@ruth",
+                                        bio: "Frontend engineer",
+                                        name: (first: "", last: ""),
+                                        birthDate: Date(),
+                                        gender: .male,
+                                        counts: .init(followers: 12, following: 34, posts: 44),
+                                        dateJoined: Date(),
+                                        profilePhoto: URL(string: "https://www.google.com")!))
 }
 
 extension ProfileViewController: UICollectionViewDataSource {
@@ -126,8 +143,8 @@ extension ProfileViewController: UICollectionViewDelegate {
         collectionView.deselectItem(at: indexPath, animated: true)
         // get model and open posts controller
 //        let viewController = PostDetailsViewController(model: viewModel.userPosts[indexPath.row])
-        let viewController = PostDetailsViewController(model: nil)
-        viewController.title = "Posts"
+        let viewController = PostDetailsViewController(model: post)
+        viewController.title = post.postType.rawValue
         viewController.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(viewController, animated: true)
     }
