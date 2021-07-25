@@ -23,9 +23,3 @@ $ cd InstaGLAM
 
 Open the file `MemeMe.xcodeproj` using Xcode 
 Click on the play button at the top left corner to build and run the project
-
-# Screenshots
-
-![Simulator Screen Shot - iPhone 11 - 2021-07-25 at 00 12 11](https://user-images.githubusercontent.com/69020285/126883778-a6bdd52b-e697-441a-ae0c-f3c2cb5a2170.png)
-
-
