@@ -23,9 +23,10 @@ Clone the repository
 ```sh
 $ git clone https://github.com/omokagbo/InstagLAM.git
 $ cd InstaGLAM
+$ pod install
 ```
 
-Open the file `InstaGLAM.xcodeproj` using Xcode 
+Open the file `InstaGLAM.xcworkspace` using Xcode 
 Click on the play button at the top left corner to build and run the project
 
 
